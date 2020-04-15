@@ -5,8 +5,8 @@ services:
     image: guacamole/guacd
     restart: always
     volumes:
-      - ./drive:/drive:rw
-      - ./record:/record:rw
+      - /var/lib/egroupware/default/guacamole/drive:/drive:rw
+      - /var/lib/egroupware/default/guacamole/record:/record:rw
 
   guacamole:
     container_name: guacamole
@@ -15,7 +15,7 @@ services:
       - db
     environment:
       GUACD_HOSTNAME: guacd
-      MYSQL_HOSTNAME: db
+      MYSQL_HOSTNAME: localhost
       MYSQL_DATABASE: egroupware
       MYSQL_USER: egroupware
       MYSQL_PASSWORD: [use db_passwd from header.inc.php]
@@ -27,4 +27,9 @@ services:
       - 127.0.0.1:8888:8080/tcp
     restart: always
     volumes:
-      - ./guacamole-home:/etc/guacamole
+      # use the host database EGroupware uses too:
+      #    - RHEL/CentOS   /var/lib/mysql/mysql.sock:/var/run/mysqld/mysqld.sock
+      #    - openSUSE/SLE  /var/run/mysql:/var/run/mysqld
+      #    - Debian/Ubuntu /var/run/mysqld:/var/run/mysqld
+      - /var/run/mysqld:/var/run/mysqld
+      - /etc/egroupware-guacamole/guacamole-home:/etc/guacamole:ro
