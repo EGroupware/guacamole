@@ -10,17 +10,6 @@
  * @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
  */
 
-// give Default group rights to use Guacamole
-$defaultgroup = $GLOBALS['egw_setup']->add_account('Default', 'Default', 'Group', false, false);
-$GLOBALS['egw_setup']->add_acl('guacamole', 'run', $defaultgroup);
-
-// give Admins group rights manage Guacamole connections
-$adminsgroup = $GLOBALS['egw_setup']->add_account('Admins', 'Admins', 'Group', false, false);
-foreach(['READ', 'UPDATE', 'DELETE', 'ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'] as $perms)
-{
-	$GLOBALS['egw_setup']->add_acl('guacamole', $perms, $adminsgroup);
-}
-
 // create Guacamole tables and views
 foreach(preg_split('/;\n/', preg_replace(['|/\*.+\*/|Us', '/^--.*$/m', '/egroupware\./', "/\n+/"], ['', '', '', "\n"],
 	file_get_contents(__DIR__.'/egroupware-account-view.sql'))) as $sql)
@@ -31,22 +20,40 @@ foreach(preg_split('/;\n/', preg_replace(['|/\*.+\*/|Us', '/^--.*$/m', '/egroupw
 // create OAuth client for guacamole
 $site_url = 'https://'.(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] !== 'localhost' ?
 	$_SERVER['HTTP_HOST'] : 'example.org').'/guacamole/';
-$GLOBALS['egw_setup']->insert('egw_openid_clients', [
+$GLOBALS['egw_setup']->db->insert('egw_openid_clients', [
 	'client_name' => 'Guacamole',
 	'client_secret' => null,
 	'client_redirect_uri' => $site_url,
 	'client_created' => date('Y-m-d H:i:s'),
 	'client_updated' => date('Y-m-d H:i:s'),
 	'client_status' => 1,
-	'client_appname' => 'guacamole',
+	'app_name' => 'guacamole',
 ],['client_identifier' => 'guacamole'], __LINE__, __FILE__, 'openid');
-if (($client_id = $idb->get_last_insert_id('egw_openid_clients', 'client_id')))
+if (($client_id = $GLOBALS['egw_setup']->db->get_last_insert_id('egw_openid_clients', 'client_id')))
 {
 	foreach([3] as $grant_id)	// 3 = Implicit grant
 	{
-		$idb->insert('egw_openid_client_grants', [], [
+		$GLOBALS['egw_setup']->db->insert('egw_openid_client_grants', [], [
 			'client_id' => $client_id,
 			'grant_id'  => $grant_id,
 		], __LINE__, __FILE__, 'openid');
 	}
+}
+
+// index page needs to be full URL, as it is outside /egroupware
+$GLOBALS['egw_setup']->db->insert('egw_applications', [
+	'app_index' => $site_url,
+], [
+	'app_name' => 'guacamole',
+], __LINE__, __FILE__);
+
+// give Default group rights to use Guacamole
+$defaultgroup = $GLOBALS['egw_setup']->add_account('Default', 'Default', 'Group', false, false);
+$GLOBALS['egw_setup']->add_acl('guacamole', 'run', $defaultgroup);
+
+// give Admins group rights to manage Guacamole connections
+$adminsgroup = $GLOBALS['egw_setup']->add_account('Admins', 'Admins', 'Group', false, false);
+foreach(['READ', 'UPDATE', 'DELETE', 'ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'] as $perms)
+{
+	$GLOBALS['egw_setup']->add_acl('guacamole', $perms, $adminsgroup);
 }
