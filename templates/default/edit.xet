@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<overlay>
+	<template id="guacamole.edit" template="" lang="" group="0" version="19.1">
+		<grid width="100%">
+			<columns>
+				<column width="110"/>
+				<column width="40%"/>
+				<column width="80"/>
+				<column width="40%"/>
+			</columns>
+			<rows>
+				<row class="dialogHeader">
+					<description for="connection_name" value="Connection"/>
+					<textbox id="connection_name" tabindex="1" maxlength="128" needed="true" span="all" class="et2_fullWidth"/>
+				</row>
+				<row>
+					<description for="protocol" value="Protocol"/>
+					<select id="protocol" tabindex="2" needed="true" span="all"/>
+				</row>
+				<row>
+					<description for="#hostname" value="Hostname"/>
+					<textbox id="#hostname" tabindex="3" maxlength="128" needed="true" class="et2_fullWidth"/>
+					<description for="#port" value="Port"/>
+					<integer id="#port" min="1"/>
+				</row>
+				<row>
+					<description for="#username" value="Username"/>
+					<textbox id="#username" class="et2_fullWidth"/>
+					<description for="#password" value="Password"/>
+					<passwd id="#password" class="et2_fullWidth"/>
+				</row>
+				<row>
+					<groupbox span="all">
+						<caption label="Permissions"/>
+						<grid id="permissions">
+							<columns>
+								<column width="100"/>
+								<column/>
+							</columns>
+							<rows>
+								<row>
+									<description for="#color-depth" value="Usage"/>
+									<taglist-account id="READ" account_type="both" class="et2_fullWidth et2_required"/>
+								</row>
+								<row>
+									<description for="#color-depth" value="Update"/>
+									<taglist-account id="UPDATE" account_type="both" class="et2_fullWidth et2_required"/>
+								</row>
+								<row>
+									<description for="#color-depth" value="Delete"/>
+									<taglist-account id="DELETE" account_type="both" class="et2_fullWidth et2_required"/>
+								</row>
+								<row>
+									<description for="#color-depth" value="Administer"/>
+									<taglist-account id="ADMINISTER" account_type="both" class="et2_fullWidth et2_required"/>
+								</row>
+							</rows>
+						</grid>
+					</groupbox>
+				</row>
+				<row>
+					<groupbox span="all">
+						<caption label="RDP settings"/>
+						<grid>
+							<columns>
+								<column width="110"/>
+								<column/>
+							</columns>
+							<rows>
+								<row>
+									<description for="#color-depth" value="Color depth"/>
+									<select id="#color-depth"/>
+								</row>
+								<row valign="top">
+									<description value="Options"/>
+									<vbox>
+										<checkbox label="Font smoothing" id="#enable-font-smoothing" selected_value="true"/>
+										<checkbox label="Ignore certificate" id="#ignore-cert" selected_value="true"/>
+									</vbox>
+								</row>
+								<row>
+									<description for="#resize-method" value="Resize method"/>
+									<select id="#resize-method"/>
+								</row>
+							</rows>
+						</grid>
+					</groupbox>
+				</row>
+				<row>
+					<hbox span="all" width="100%">
+						<button accesskey="s" label="Save" id="button[save]"/>
+						<button label="Apply" id="button[apply]"/>
+						<button label="Cancel" id="button[cancel]" onclick="window.close(); return false;"/>
+						<button align="right" label="Delete" id="button[delete]" onclick="et2_dialog.confirm(widget,'Do you really want to delete this connection?','Delete')"/>
+					</hbox>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>
+

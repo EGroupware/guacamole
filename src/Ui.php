@@ -1,0 +1,256 @@
+<?php
+/**
+ * EGroupware - Guacamole - User interface
+ *
+ * @link http://www.egroupware.org
+ * @author Ralf Becker <rb-AT-egroupware.org>
+ * @package guacamole
+ * @copyright (c) 2020 by Ralf Becker <rb-AT-egroupware.org>
+ * @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
+ */
+
+namespace EGroupware\Guacamole;
+
+use EGroupware\Api;
+
+class Ui
+{
+	/**
+	 * Methods callable via menuaction GET parameter
+	 *
+	 * @var array
+	 */
+	public $public_functions = [
+		'index' => true,
+		'edit'  => true,
+	];
+
+	/**
+	 * Connection protocols
+	 *
+	 * @var array
+	 */
+	protected static $protocols = [
+		'rdp' => 'RDP',
+		'vnc' => 'VNC',
+		'ssh' => 'SSH',
+		'kubernetes' => 'Kubernetes',
+		'telnet' => 'Telnet',
+	];
+
+	protected static $color_depth = [
+		'16' => 'High Color (16 bit)',
+		'24' => 'True Color (24 bit)',
+		'32' => 'Highest Color (32 bit)',
+		'8'  => '256 Colors (8 bit)',
+	];
+
+	protected static $resize_method = [
+		'display-update' => 'display update (RDP 8.1+)',
+		'reconnect' => 'reconnect',
+	];
+
+	/**
+	 * Instance of our business object
+	 *
+	 * @var Bo
+	 */
+	protected $bo;
+
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		$this->bo = new Bo();
+	}
+
+	/**
+	 * Edit a host
+	 *
+	 * @param array $content =null
+	 */
+	public function edit(array $content=null)
+	{
+		if (!is_array($content))
+		{
+			if (!empty($_GET['connection_id']))
+			{
+				if (!($content = $this->bo->read(['connection_id' => $_GET['connection_id']])))
+				{
+					Api\Framework::window_close(lang('Entry not found!'));
+				}
+				$content['permissions'] = $this->bo->readPerms($content['connection_id']);
+			}
+			else
+			{
+				$content = $this->bo->init();
+			}
+		}
+		else
+		{
+			$button = key($content['button']);
+			unset($content['button']);
+			switch($button)
+			{
+				case 'save':
+				case 'apply':
+					if (!$this->bo->save($content))
+					{
+						$content['connection_id'] = $this->bo->data['connection_id'];
+						$this->bo->updatePerms($content['connection_id'], $content['permissions']);
+
+						Api\Framework::refresh_opener(lang('Entry saved.'),
+							Bo::APP, $this->bo->data['connection_id'],
+							empty($content['connection_id']) ? 'add' : 'edit');
+
+						$content = array_merge($content, $this->bo->data);
+					}
+					else
+					{
+						Api\Framework::message(lang('Error storing entry!'));
+						unset($button);
+					}
+					if ($button === 'save')
+					{
+						Api\Framework::window_close();	// does NOT return
+					}
+					Api\Framework::message(lang('Entry saved.'));
+					break;
+
+				case 'delete':
+					if (!$this->bo->delete(['connection_id' => $content['connection_id']]))
+					{
+						Api\Framework::message(lang('Error deleting entry!'));
+					}
+					else
+					{
+						Api\Framework::refresh_opener(lang('Entry deleted.'),
+							Bo::APP, $content['connection_id'], 'delete');
+
+						Api\Framework::window_close();	// does NOT return
+					}
+			}
+		}
+		$content['link_to'] = [
+			'to_id'  => $content['connection_id'],
+			'to_app' => Bo::APP,
+		];
+		$readonlys = [
+			'button[delete]' => !$content['connection_id'],
+		];
+		$tmpl = new Api\Etemplate(Bo::APP.'.edit');
+		$tmpl->exec(Bo::APP.'.'.self::class.'.edit', $content, [
+			'protocol' => self::$protocols,
+			'#color-depth' => self::$color_depth,
+			'#resize-method' => self::$resize_method,
+		], $readonlys, $content, 2);
+	}
+
+	/**
+	 * Fetch rows to display
+	 *
+	 * @param array $query
+	 * @param array& $rows =null
+	 * @param array& $readonlys =null
+	 */
+	public function get_rows($query, array &$rows=null, array &$readonlys=null)
+	{
+		return $this->bo->get_rows($query, $rows, $readonlys);
+	}
+
+	/**
+	 * Index
+	 *
+	 * @param array $content =null
+	 */
+	public function index(array $content=null)
+	{
+		if (!is_array($content) || empty($content['nm']))
+		{
+			$content = [
+				'nm' => [
+					'get_rows'       =>	Bo::APP.'.'.self::class.'.get_rows',
+					'no_filter'      => true,	// disable the diverse filters we not (yet) use
+					'no_filter2'     => true,
+					'no_cat'         => true,
+					'order'          =>	'connection_id',// IO name of the column to sort after (optional for the sortheaders)
+					'sort'           =>	'DESC',// IO direction of the sort: 'ASC' or 'DESC'
+					'row_id'         => 'connection_id',
+					'actions'        => $this->get_actions(),
+					'placeholder_actions' => array('add')
+				]
+			];
+		}
+		elseif(!empty($content['nm']['action']))
+		{
+			try {
+				Api\Framework::message($this->action($content['nm']['action'],
+					$content['nm']['selected'], $content['nm']['select_all']));
+			}
+			catch (\Exception $ex) {
+				Api\Framework::message($ex->getMessage(), 'error');
+			}
+		}
+		$tmpl = new Api\Etemplate(Bo::APP.'.index');
+		$tmpl->exec(Bo::APP.'.'.self::class.'.index', $content, [
+			'protocol' => self::$protocols,
+		], [], ['nm' => $content['nm']]);
+	}
+
+	/**
+	 * Return actions for cup list
+	 *
+	 * @param array $cont values for keys license_(nation|year|cat)
+	 * @return array
+	 */
+	protected function get_actions()
+	{
+		return [
+			'edit' => [
+				'caption' => 'Edit',
+				'default' => true,
+				'allowOnMultiple' => false,
+				'url' => 'menuaction='.Bo::APP.'.'.self::class.'.edit&connection_id=$id',
+				'popup' => '640x480',
+				'group' => $group=0,
+			],
+			'add' => [
+				'caption' => 'Add',
+				'url' => 'menuaction='.Bo::APP.'.'.self::class.'.edit',
+				'popup' => '640x320',
+				'group' => $group,
+			],
+			'delete' => [
+				'caption' => 'Delete',
+				'confirm' => 'Delete this connection(s)',
+				'group' => $group=5,
+			],
+		];
+	}
+
+	/**
+	 * Execute ation on list
+	 *
+	 * @param string $action
+	 * @param array|int $selected
+	 * @param boolean $select_all
+	 * @returns string with success message
+	 * @throws Api\Exception\AssertionFailed
+	 */
+	protected function action($action, $selected, $select_all)
+	{
+		switch($action)
+		{
+			case 'delete':
+				if (!($num = $this->bo->delete($select_all ? [] : ['connection_id' => $selected])))
+				{
+					Api\Framework::message(lang('Error deleting connection!'));
+				}
+				return lang('%1 connection(s) deleted.', $num);
+
+			default:
+				throw new Api\Exception\AssertionFailed("Unknown action '$action'!");
+		}
+	}
+}
