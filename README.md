@@ -46,7 +46,7 @@ Create /etc/egroupware-guacamole/nginx.conf:
 ```yaml
     # Guacamole to include in your server-block
     location /guacamole/ {
-        proxy_pass http://localhost:8888/guacamole/;
+        proxy_pass http://127.0.0.1:8888/guacamole/;
         proxy_buffering off;
         proxy_http_version 1.1;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -62,7 +62,19 @@ Create /etc/egroupware-guacamole/nginx.conf:
 Create /etc/egroupware-guacamole/apache.conf:
 ```
     # Apache config to include in your vhost
-    ...
+    <Location /guacamole/>
+        Order allow,deny
+        Allow from all
+        ProxyPass http://127.0.0.1:8888/guacamole/ flushpackets=on
+        ProxyPassReverse http://127.0.0.1:8888/guacamole/
+    </Location>
+    
+    <Location /guacamole/websocket-tunnel>
+        Order allow,deny
+        Allow from all
+        ProxyPass ws://127.0.0.1:8888/guacamole/websocket-tunnel
+        ProxyPassReverse ws://127.0.0.1:8888/guacamole/websocket-tunnel
+    </Location>
 ```
 Create /etc/egroupware-guacamole/guacamole-home/extensions:
 ```

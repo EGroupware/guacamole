@@ -1,0 +1,30 @@
+version: 3
+services:
+  guacd:
+    container_name: guacamole-guacd
+    image: guacamole/guacd
+    restart: always
+    volumes:
+      - ./drive:/drive:rw
+      - ./record:/record:rw
+
+  guacamole:
+    container_name: guacamole
+    depends_on:
+      - guacd
+      - db
+    environment:
+      GUACD_HOSTNAME: guacd
+      MYSQL_HOSTNAME: db
+      MYSQL_DATABASE: egroupware
+      MYSQL_USER: egroupware
+      MYSQL_PASSWORD: [use db_passwd from header.inc.php]
+      GUACAMOLE_HOME: /etc/guacamole
+    image: guacamole/guacamole
+    links:
+      - guacd
+    ports:
+      - 127.0.0.1:8888:8080/tcp
+    restart: always
+    volumes:
+      - ./guacamole-home:/etc/guacamole
