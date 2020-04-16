@@ -9,10 +9,10 @@
 * Guacamole UI can be used to set advanced connection options
 
 #### Docker-Compose and other files to run Guacamole
-Create /etc/egroupware-guacamole/docker-compose.yaml:
+The following files are  fragments to be included in an EGroupware Docker installation.
+
+docker-compose.yaml:
 ```yaml
-version: 3
-services:
   guacd:
     container_name: guacamole-guacd
     image: guacamole/guacd
@@ -31,7 +31,7 @@ services:
       MYSQL_HOSTNAME: db
       MYSQL_DATABASE: egroupware
       MYSQL_USER: egroupware
-      MYSQL_PASSWORD: [use db_passwd from header.inc.php]
+      MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
     links:
@@ -40,9 +40,9 @@ services:
     - 127.0.0.1:8888:8080/tcp
     restart: always
     volumes:
-    - ./guacamole-home:/etc/guacamole
+    - /etc/guacamole:/etc/guacamole
 ```
-Create /etc/egroupware-guacamole/nginx.conf:
+nginx.conf:
 ```yaml
     # Guacamole to include in your server-block
     location /guacamole/ {
@@ -59,7 +59,7 @@ Create /etc/egroupware-guacamole/nginx.conf:
         client_max_body_size 4096m;
     }
 ```
-Create /etc/egroupware-guacamole/apache.conf:
+apache.conf:
 ```
     # Apache config to include in your vhost
     <Location /guacamole/>
@@ -76,13 +76,13 @@ Create /etc/egroupware-guacamole/apache.conf:
         ProxyPassReverse ws://127.0.0.1:8888/guacamole/websocket-tunnel
     </Location>
 ```
-Create /etc/egroupware-guacamole/guacamole-home/extensions:
+Create /etc/guacamole to be mounted into the container:
 ```
 mkdir -p /etc/egroupware-guacamole/guacamole-home/extensions
-cd /etc/egroupware-guacamole/guacamole-home/extensions
+cd /etc/guacamole/extensions
 ln -s /opt/guacamole/openid/guacamole-auth-openid-1.1.0.jar 00-guacamole-auth-openid-1.1.0.jar
 ```
-/etc/egroupware-guacamole/guacamole-home/guacamole.properties:
+/etc/guacamole/guacamole.properties:
 ```
 # OpenIDConnect configuration (https://guacamole.apache.org/doc/gug/openid-auth.html#guac-openid-config)
 # https://lemonldap-ng.org/documentation/latest/applications/guacamole
