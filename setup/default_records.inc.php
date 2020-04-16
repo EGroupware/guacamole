@@ -40,13 +40,6 @@ if (($client_id = $GLOBALS['egw_setup']->db->get_last_insert_id('egw_openid_clie
 	}
 }
 
-// index page needs to be full URL, as it is outside /egroupware
-$GLOBALS['egw_setup']->db->insert('egw_applications', [
-	'app_index' => $site_url,
-], [
-	'app_name' => 'guacamole',
-], __LINE__, __FILE__);
-
 // give Default group rights to use Guacamole
 $defaultgroup = $GLOBALS['egw_setup']->add_account('Default', 'Default', 'Group', false, false);
 $GLOBALS['egw_setup']->add_acl('guacamole', 'run', $defaultgroup);

@@ -14,9 +14,11 @@ services:
       - guacd
     environment:
       GUACD_HOSTNAME: guacd
-      MYSQL_HOSTNAME: localhost
+      # MariaDB on host needs to bind on 172.17.0.1 (docker0) instead of localhost, as Guacamole/Tomcat has trouble to use socket
+      MYSQL_HOSTNAME: 172.17.0.1
       MYSQL_DATABASE: egroupware
       MYSQL_USER: egroupware
+      # package post sets password from /var/lib/egroupware/header.inc.php: GRANT ALL ON egroupware.* TO egroupware@`%` IDENTIFIED BY 'password'
       MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
@@ -26,9 +28,8 @@ services:
       - 127.0.0.1:8888:8080/tcp
     restart: always
     volumes:
-      # use the host database EGroupware uses too:
-      #    - RHEL/CentOS   /var/lib/mysql/mysql.sock:/var/run/mysqld/mysqld.sock
-      #    - openSUSE/SLE  /var/run/mysql:/var/run/mysqld
-      #    - Debian/Ubuntu /var/run/mysqld:/var/run/mysqld
-      - /var/run/mysqld:/var/run/mysqld
       - /etc/egroupware-guacamole/guacamole-home:/etc/guacamole:ro
+    # set the ip-address of your docker host AND your official DNS name so Guacamole
+    # can access EGroupware without the need to go over your firewall
+    #extra_hosts:
+    #- "my.host.name:172.17.0.1"

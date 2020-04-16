@@ -17,7 +17,9 @@ $setup_info['guacamole']['version']   = '0.1';
 $setup_info['guacamole']['app_order'] = 5;
 $setup_info['guacamole']['enable']    = 1;
 $setup_info['guacamole']['tables']    = [];
-$setup_info['guacamole']['index']     = '/guacamole/';
+$setup_info['guacamole']['index']     =
+	(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] !== 'localhost' ?
+		'https://'.$_SERVER['HTTP_HOST'] : '').'/guacamole/';
 
 $setup_info['guacamole']['author'] =
 $setup_info['guacamole']['maintainer'] = array(
@@ -37,6 +39,3 @@ $setup_info['guacamole']['depends'][] = array(
 	 'appname' => 'api',
 	 'versions' => Array('19.1')
 );
-
-
-

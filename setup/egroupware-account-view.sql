@@ -494,15 +494,15 @@ CREATE TABLE guacamole_sharing_profile_permission (
 -- group a system-level privilege of some kind.
 --
 
-CREATE OR REPLACE VIEW guacamole_system_permission AS (
+CREATE OR REPLACE VIEW guacamole_system_permission AS
 (SELECT ABS(acl_account) AS entity_id, CASE WHEN acl_location='ADMINISTER' THEN acl_location ELSE CONCAT('CREATE_', acl_location) END AS permission
 FROM egroupware.egw_acl
-WHERE acl_appname='guacamole' AND acl_location IN ('ADMINISTER','CONNECTION','SHARING_PROFILE'))
+WHERE acl_appname='guacamole' AND acl_location IN ('ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'))
 UNION
 (SELECT members.acl_account AS entity_id, CASE WHEN egw_acl.acl_location='ADMINISTER' THEN egw_acl.acl_location ELSE CONCAT('CREATE_', egw_acl.acl_location) END AS permission
 FROM egroupware.egw_acl
 JOIN egroupware.egw_acl members ON members.acl_appname='phpgw_group' AND CAST(members.acl_location AS INTEGER)=egw_acl.acl_account
-WHERE egw_acl.acl_appname='guacamole' AND egw_acl.acl_location IN ('ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE') AND egw_acl.acl_account < 0));
+WHERE egw_acl.acl_appname='guacamole' AND egw_acl.acl_location IN ('ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE') AND egw_acl.acl_account < 0);
 /* CREATE_ prefix is NOT stored, as acl_location is only varchar(16) */
 
 /* replaced by view using egw_acl table (no CREATE_USER(_GROUP) as that is manged in EGroupware anyway)
@@ -565,7 +565,7 @@ CREATE TABLE `guacamole_user_group_permission` (
 -- operation.
 --
 
-CREATE OR REPLACE VIEW guacamole_user_permission AS (
+CREATE OR REPLACE VIEW guacamole_user_permission AS
 (SELECT guacamole_user_group.entity_id, guacamole_user.user_id AS affected_user_id, permission
 FROM guacamole_user
 JOIN guacamole_user_group_member ON guacamole_user.entity_id=member_entity_id
@@ -574,7 +574,7 @@ JOIN guacamole_user_group_permission ON guacamole_user_group.entity_id=guacamole
 UNION
 (SELECT ABS(acl_account) AS entity_id, ABS(acl_account) AS affected_user_id, acl_location AS permission
 FROM egroupware.egw_acl
-WHERE acl_appname='guacamole' AND acl_location IN ('READ','UPDATE','DELETE','ADMINISTER') AND acl_account > 0));
+WHERE acl_appname='guacamole' AND acl_location IN ('READ','UPDATE','DELETE','ADMINISTER') AND acl_account > 0);
 
 /* replaced by view from egw_acl table
 CREATE TABLE `guacamole_user_permission` (
