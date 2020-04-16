@@ -1,4 +1,4 @@
-version: 3
+version: '3'
 services:
   guacd:
     container_name: guacamole-guacd
@@ -12,13 +12,12 @@ services:
     container_name: guacamole
     depends_on:
       - guacd
-      - db
     environment:
       GUACD_HOSTNAME: guacd
       MYSQL_HOSTNAME: localhost
       MYSQL_DATABASE: egroupware
       MYSQL_USER: egroupware
-      MYSQL_PASSWORD: [use db_passwd from header.inc.php]
+      MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
     links:
