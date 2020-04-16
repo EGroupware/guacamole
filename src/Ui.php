@@ -50,6 +50,23 @@ class Ui
 		'reconnect' => 'reconnect',
 	];
 
+	protected static $server_layout = [
+		'de-de-qwertz' => 'German (Qwertz)',
+		'en-us-qwerty' => 'English (US) (Qwerty)',
+		'en-gb-qwerty' => 'English (GB) (Qwerty)',
+		'de-ch-quertz' => 'Swiss German (Qwertz)',
+		'fr-ch-qwertz' => 'Swiss French (Qwertz)',
+		'fr-fr-azerty' => 'French (Azerty)',
+		'it-it-qwerty' => 'Italian (Qwerty)',
+		'es-es-qwerty' => 'Spanish (Qwerty)',
+		'da-dk-qwerty' => 'Dansk (Qwerty)',
+		'sv-se-qwerty' => 'Swedish (Qwerty)',
+		'tr-tr-qwerty' => 'Turkish (Qwerty)',
+		'pt-br-qwerty' => 'Portuguese (BR) (Qwerty)',
+		'ja-jp-qwerty' => 'Japanese (Qwerty)',
+		'failsafe'     => 'Unicode',
+	];
+
 	/**
 	 * Instance of our business object
 	 *
@@ -132,16 +149,18 @@ class Ui
 					}
 			}
 		}
+		/* not (yet) used
 		$content['link_to'] = [
 			'to_id'  => $content['connection_id'],
 			'to_app' => Bo::APP,
-		];
+		];*/
 		$readonlys = [
 			'button[delete]' => !$content['connection_id'],
 		];
 		$tmpl = new Api\Etemplate(Bo::APP.'.edit');
 		$tmpl->exec(Bo::APP.'.'.self::class.'.edit', $content, [
 			'protocol' => self::$protocols,
+			'#server-layout' => self::$server_layout,
 			'#color-depth' => self::$color_depth,
 			'#resize-method' => self::$resize_method,
 		], $readonlys, $content, 2);

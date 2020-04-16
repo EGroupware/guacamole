@@ -42,10 +42,12 @@ class Bo extends Api\Storage
 				'port' => ['name' => 'port'],
 				'username' => ['name' => 'username'],
 				'password' => ['name' => 'password'],
-				'color_depth' => ['name' => 'colordepth'],	// 8, 16, 24, 32
+				'color-depth' => ['name' => 'color-depth'],	// 8, 16, 24, 32
 				'ignore-cert' => ['name' => 'ignore-cert'],	// true
 				'enable-font-smoothing' => ['name' => 'enable-font-smoothing'],
 				'resize-method' => ['name' => 'resize-method'],	// display-update
+				'server-layout' => ['name' => 'server-layout'],
+				'timezone' => ['name' => 'timezone'],
 				'security' => ['name' => 'security'],	// tls
 			];
 			foreach($this->db->select(self::EXTRA_TABLE, 'DISTINCT '.self::EXTRA_NAME, false, __LINE__, __FILE__) as $row)

@@ -18,7 +18,7 @@ services:
       MYSQL_HOSTNAME: 172.17.0.1
       MYSQL_DATABASE: egroupware
       MYSQL_USER: egroupware
-      # package post sets password from /var/lib/egroupware/header.inc.php: GRANT ALL ON egroupware.* TO egroupware@`%` IDENTIFIED BY 'password'
+      # package post-script sets password from /var/lib/egroupware/header.inc.php: GRANT ALL ON egroupware.* TO egroupware@`%` IDENTIFIED BY 'password'
       MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
@@ -32,4 +32,4 @@ services:
     # set the ip-address of your docker host AND your official DNS name so Guacamole
     # can access EGroupware without the need to go over your firewall
     #extra_hosts:
-    #- "my.host.name:172.17.0.1"
+    #- "example.org:172.17.0.1"
