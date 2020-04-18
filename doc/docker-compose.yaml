@@ -17,9 +17,9 @@ services:
       # MariaDB on host needs to bind on 172.17.0.1 (docker0) instead of localhost, as Guacamole/Tomcat has trouble to use socket
       MYSQL_HOSTNAME: 172.17.0.1
       MYSQL_DATABASE: egroupware
-      MYSQL_USER: egroupware
-      # package post-script sets password from /var/lib/egroupware/header.inc.php: GRANT ALL ON egroupware.* TO egroupware@`%` IDENTIFIED BY 'password'
-      MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
+      MYSQL_USER: guacamole
+      # guacamole-user-password must NOT contain special chars, eg. use the following to generate a save one: openssl rand --hex 16
+      MYSQL_PASSWORD: guacamole-user-password
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
     links:

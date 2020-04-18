@@ -1,6 +1,6 @@
 # Apache Guacamole in EGroupware
 
-#### EGroupware app does the following:
+#### EGroupware Guacamole app does the following:
 
 * Installs all tables (or views) for Apache Guacamole
 * Everything account-related is a view, not a table
@@ -8,8 +8,27 @@
 * One has to use EGroupware to assign permissions to connections
 * Guacamole UI can be used to set advanced connection options
 
-#### Docker-Compose and other files to run Guacamole
-The following files are  fragments to be included in an EGroupware Docker installation.
+> The app requires accounts stored in SQL. A workaround for using LDAP or ActiveDirectory for account storage (not just authentication), is to regularly use setup to migrate users and groups to SQL.
+
+#### List of resources / further reading:
+* [Guacamole installation instructions for EGroupware via package-manager](https://github.com/EGroupware/egroupware/wiki/Guacamole)
+* [Apache Guacamole website](https://guacamole.apache.org)
+* [Using Guacamole section of Guacamole manual](https://guacamole.apache.org/doc/gug/using-guacamole.html)
+* [Administration section of Guacamole manual](https://guacamole.apache.org/doc/gug/administration.html) (keep in mind to use EGroupware UI to assign connection permissions!)
+* [Frequently Asked Questions from Guacamole](https://guacamole.apache.org/faq/)
+* [Guacamole category in our forum](https://help.egroupware.org/c/deutsch/guacamole) (German)
+
+#### Instructions to integrate Guacamole in an EGroupware installation via Docker
+> A deb or rpm package installation via egroupware-guacamole package, available from our usual repository, does NOT require anything mentioned here!
+
+Following files are fragments to be included in an [EGroupware Docker](https://github.com/EGroupware/egroupware/tree/master/doc/docker) or [development](https://github.com/EGroupware/egroupware/tree/master/doc/docker/development) installation.
+
+First you need to create a database account for Guacamole:
+> docker-compose has problems with passwords containing special chars, use a eg. the following to create a safe password:
+```
+openssl rand --hex 16 # use the output for [guacamole-user-password] below
+docker-compose exec db mysql --execute "GRANT ALL ON egroupware.* TO guacamole@`%` IDENTIFIED BY 'guacamole-user-password'"
+```
 
 docker-compose.yaml:
 ```yaml
@@ -30,8 +49,8 @@ docker-compose.yaml:
       GUACD_HOSTNAME: guacd
       MYSQL_HOSTNAME: db
       MYSQL_DATABASE: egroupware
-      MYSQL_USER: egroupware
-      MYSQL_PASSWORD: 'use db_passwd from header.inc.php'
+      MYSQL_USER: guacamole
+      MYSQL_PASSWORD: guacamole-user-password
       GUACAMOLE_HOME: /etc/guacamole
     image: guacamole/guacamole
     links:
@@ -94,7 +113,7 @@ openid-redirect-uri: https://example.org/guacamole/
 openid-username-claim-type: sub
 openid-scope: openid profile email
 ```
-Create an OpenID connect client in EGroupware (Admin >> OpenID / OAUth2 Server >> Clients)
+The app installation creates an OpenID connect client in EGroupware (Admin >> OpenID / OAUth2 Server >> Clients), but you need to check for the correct Redirect URI and Index URL!
 ```
 Name: Guacamole
 Identifier: guacamole
@@ -105,8 +124,10 @@ Limit Scopes:
 Status: Active
 Access-Token TTL: Use default of: 1 Hour
 Refresh-Token TTL: Use default of: 1 Month
+[Manage as EGroupware application]
+Application name: guacamole
+Start URL: https://example.org/guacamole/
+Allowed for: [Group Default]
+Icon:
 ```
-**You have to replace https://example.org/ in all above files with the URL you use!**
-#### list of ressources / further reading:
-
-* 
+> You have to replace https://example.org/ in all above files with the URL you use!
