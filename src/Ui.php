@@ -95,7 +95,7 @@ class Ui
 			{
 				if (!($content = $this->bo->read(['connection_id' => $_GET['connection_id']])))
 				{
-					Api\Framework::window_close(lang('Entry not found!'));
+					Api\Framework::window_close(lang('Connection not found!'));
 				}
 				$content['permissions'] = $this->bo->readPerms($content['connection_id']);
 			}
@@ -117,7 +117,7 @@ class Ui
 						$content['connection_id'] = $this->bo->data['connection_id'];
 						$this->bo->updatePerms($content['connection_id'], $content['permissions']);
 
-						Api\Framework::refresh_opener(lang('Entry saved.'),
+						Api\Framework::refresh_opener(lang('Connection saved.'),
 							Bo::APP, $this->bo->data['connection_id'],
 							empty($content['connection_id']) ? 'add' : 'edit');
 
@@ -125,14 +125,14 @@ class Ui
 					}
 					else
 					{
-						Api\Framework::message(lang('Error storing entry!'));
+						Api\Framework::message(lang('Error storing connection!'));
 						unset($button);
 					}
 					if ($button === 'save')
 					{
 						Api\Framework::window_close();	// does NOT return
 					}
-					Api\Framework::message(lang('Entry saved.'));
+					Api\Framework::message(lang('Connection saved.'));
 					break;
 
 				case 'delete':
@@ -142,7 +142,7 @@ class Ui
 					}
 					else
 					{
-						Api\Framework::refresh_opener(lang('Entry deleted.'),
+						Api\Framework::refresh_opener(lang('Connection deleted.'),
 							Bo::APP, $content['connection_id'], 'delete');
 
 						Api\Framework::window_close();	// does NOT return

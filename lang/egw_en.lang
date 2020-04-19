@@ -1,1 +1,46 @@
+%1 connection(s) deleted.	guacamole	en	%1 connection(s) deleted.
+256 colors (8 bit)	guacamole	en	256 Colors (8 bit)
+administer	guacamole	en	Administer
+color depth	guacamole	en	Color depth
+connection	guacamole	en	Connection
+connection deleted.	guacamole	en	Connection deleted.
+connection not found!	guacamole	en	Connection not found!
+connection saved.	guacamole	en	Connection saved.
+dansk (qwerty)	guacamole	en	Dansk (Qwerty)
+display update (rdp 8.1+)	guacamole	en	display update (RDP 8.1+)
+english (gb) (qwerty)	guacamole	en	English (GB) (Qwerty)
+english (us) (qwerty)	guacamole	en	English (US) (Qwerty)
+error deleting connection!	guacamole	en	Error deleting connection!
+error storing connection!	guacamole	en	Error storing connection!
+font smoothing	guacamole	en	Font smoothing
+french (azerty)	guacamole	en	French (Azerty)
+german (qwertz)	guacamole	en	German (Qwertz)
 guacamole	common	en	Guacamole
+high color (16 bit)	guacamole	en	High Color (16 bit)
+highest color (32 bit)	guacamole	en	Highest Color (32 bit)
+hostname	guacamole	en	Hostname
+ignore certificate	guacamole	en	Ignore certificate
+italian (qwerty)	guacamole	en	Italian (Qwerty)
+japanese (qwerty)	guacamole	en	Japanese (Qwerty)
+keyboard layout	guacamole	en	Keyboard layout
+kubernetes	guacamole	en	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	en	Members of Admins group have full permissions for all connections.
+permissions	guacamole	en	Permissions
+port	guacamole	en	Port
+portuguese (br) (qwerty)	guacamole	en	Portuguese (BR) (Qwerty)
+protocol	guacamole	en	Protocol
+rdp	guacamole	en	RDP
+rdp settings	guacamole	en	RDP settings
+reconnect	guacamole	en	reconnect
+resize method	guacamole	en	Resize method
+spanish (qwerty)	guacamole	en	Spanish (Qwerty)
+ssh	guacamole	en	SSH
+swedish (qwerty)	guacamole	en	Swedish (Qwerty)
+swiss french (qwertz)	guacamole	en	Swiss French (Qwertz)
+swiss german (qwertz)	guacamole	en	Swiss German (Qwertz)
+telnet	guacamole	en	Telnet
+timezone	guacamole	en	Timezone
+true color (24 bit)	guacamole	en	True Color (24 bit)
+turkish (qwerty)	guacamole	en	Turkish (Qwerty)
+usage	guacamole	en	Usage
+vnc	guacamole	en	VNC
