@@ -101,7 +101,19 @@ class Ui
 			}
 			else
 			{
-				$content = $this->bo->init();
+				$content = $this->bo->init([
+					'#server-layout' => key(array_filter(self::$server_layout, function ($key)
+					{
+						$ret = substr($key, 0, 5) === strtolower(substr(
+							str_replace('_', '-', $GLOBALS['egw_info']['user']['preferences']['common']['lang']).
+							'-'.$GLOBALS['egw_info']['user']['preferences']['common']['country'], 0, 5));
+						return $ret;
+					}, ARRAY_FILTER_USE_KEY)),
+					'#timezone' => $GLOBALS['egw_info']['user']['preferences']['common']['tz'],
+					'#color-depth' => '16',
+					'#enable-font-smoothing' => true,
+					'#ignore-cert' => true,
+				]);
 			}
 		}
 		else
