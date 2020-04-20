@@ -1,5 +1,7 @@
 # Apache Guacamole in EGroupware
 
+![GuacamoleWindows2016Server](https://user-images.githubusercontent.com/972180/79756536-0df90280-831b-11ea-97ff-b3043d7b31e4.png)
+
 #### EGroupware Guacamole app does the following:
 
 * Installs all tables (or views) for Apache Guacamole
