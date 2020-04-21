@@ -1,1 +1,46 @@
+%1 connection(s) deleted.	guacamole	de	%1 Verbindung(en) gelöscht.
+256 colors (8 bit)	guacamole	de	256 Farben (8 Bit)
+administer	guacamole	de	Administrieren
+color depth	guacamole	de	Farbtiefe
+connection	guacamole	de	Verbindung
+connection deleted.	guacamole	de	Verbindung gelöscht.
+connection not found!	guacamole	de	Verbindung nicht gefunden!
+connection saved.	guacamole	de	Verbindung gespeichert.
+dansk (qwerty)	guacamole	de	Dänisch (Qwerty)
+display update (rdp 8.1+)	guacamole	de	"Display Update" virtual Channel (RDP 8.1+)
+english (gb) (qwerty)	guacamole	de	Englisch (GB) (Qwerty)
+english (us) (qwerty)	guacamole	de	Englisch (US) (Qwerty)
+error deleting connection!	guacamole	de	Fehler beim Löschen der Verbindung!
+error storing connection!	guacamole	de	Fehler beim Speichern der Verbindung!
+font smoothing	guacamole	de	Schriftartglättung (ClearType) aktivieren
+french (azerty)	guacamole	de	Französisch (Azerty)
+german (qwertz)	guacamole	de	Deutsch (Qwertz)
 guacamole	common	de	Guacamole
+high color (16 bit)	guacamole	de	Hohe Farbtiefe (16 Bit)
+highest color (32 bit)	guacamole	de	Echtfarben (32 Bit)
+hostname	guacamole	de	Hostname
+ignore certificate	guacamole	de	Serverzertifikat ignorieren
+italian (qwerty)	guacamole	de	Italienisch (Qwerty)
+japanese (qwerty)	guacamole	de	Japanisch (Qwerty)
+keyboard layout	guacamole	de	Tastaturlayout
+kubernetes	guacamole	de	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	de	Mitglieder der Admins Gruppe haben volle Rechte für alle Verbindungen.
+permissions	guacamole	de	Rechte
+port	guacamole	de	Port
+portuguese (br) (qwerty)	guacamole	de	Portugiesisch (BR) (Qwerty)
+protocol	guacamole	de	Protokoll
+rdp	guacamole	de	RDP
+rdp settings	guacamole	de	RDP Einstellungen
+reconnect	guacamole	de	Erneut verbinden
+resize method	guacamole	de	Grössenänderungs-Methode
+spanish (qwerty)	guacamole	de	Spanisch (Qwerty)
+ssh	guacamole	de	SSH
+swedish (qwerty)	guacamole	de	Schwedisch (Qwerty)
+swiss french (qwertz)	guacamole	de	Schweiz Französisch (Qwerty)
+swiss german (qwertz)	guacamole	de	Schweiz Deutsch (Qwerty)
+telnet	guacamole	de	Telnet
+timezone	guacamole	de	Zeitzone
+true color (24 bit)	guacamole	de	Echtfarben (24 Bit)
+turkish (qwerty)	guacamole	de	Türkisch (Qwerty)
+usage	guacamole	de	Benutzung
+vnc	guacamole	de	VNC
