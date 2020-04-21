@@ -1,4 +1,4 @@
-# Apache Guacamole in EGroupware
+# Apache Guacamole managed by EGroupware
 
 ![GuacamoleWindows2016Server](https://user-images.githubusercontent.com/972180/79756536-0df90280-831b-11ea-97ff-b3043d7b31e4.png)
 
@@ -13,7 +13,7 @@
 > The app requires accounts stored in SQL. A workaround for using LDAP or ActiveDirectory for account storage (not just authentication), is to regularly use setup to migrate users and groups to SQL.
 
 #### List of resources / further reading:
-* [Guacamole installation instructions for EGroupware via package-manager](https://github.com/EGroupware/egroupware/wiki/Guacamole)
+* [Guacamole installation instructions for EGroupware via package-manager](https://github.com/EGroupware/egroupware/wiki/Apache-Guacamole-managed-by-EGroupware)
 * [Apache Guacamole website](https://guacamole.apache.org)
 * [Using Guacamole section of Guacamole manual](https://guacamole.apache.org/doc/gug/using-guacamole.html)
 * [Administration section of Guacamole manual](https://guacamole.apache.org/doc/gug/administration.html) (keep in mind to use EGroupware UI to assign connection permissions!)
