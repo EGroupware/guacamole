@@ -223,6 +223,7 @@ class Ui
 				Api\Framework::message($ex->getMessage(), 'error');
 			}
 		}
+		Api\Translation::add_app(Bo::APP);
 		$tmpl = new Api\Etemplate(Bo::APP.'.index');
 		$tmpl->exec(Bo::APP.'.'.self::class.'.index', $content, [
 			'protocol' => self::$protocols,

@@ -6,6 +6,7 @@ connection	guacamole	en	Connection
 connection deleted.	guacamole	en	Connection deleted.
 connection not found!	guacamole	en	Connection not found!
 connection saved.	guacamole	en	Connection saved.
+connections	admin	en	Connections
 dansk (qwerty)	guacamole	en	Dansk (Qwerty)
 display update (rdp 8.1+)	guacamole	en	display update (RDP 8.1+)
 english (gb) (qwerty)	guacamole	en	English (GB) (Qwerty)

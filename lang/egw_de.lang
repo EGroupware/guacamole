@@ -6,6 +6,7 @@ connection	guacamole	de	Verbindung
 connection deleted.	guacamole	de	Verbindung gelöscht.
 connection not found!	guacamole	de	Verbindung nicht gefunden!
 connection saved.	guacamole	de	Verbindung gespeichert.
+connections	admin	de	Verbindungen
 dansk (qwerty)	guacamole	de	Dänisch (Qwerty)
 display update (rdp 8.1+)	guacamole	de	"Display Update" virtual Channel (RDP 8.1+)
 english (gb) (qwerty)	guacamole	de	Englisch (GB) (Qwerty)
