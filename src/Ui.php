@@ -80,6 +80,12 @@ class Ui
 	 */
 	public function __construct()
 	{
+		// check if we need and have admin rights
+		if ($_GET['menuaction'] !== Bo::APP.'.'.self::class.'.index' &&
+			empty($GLOBALS['egw_info']['user']['apps']['admin']))
+		{
+			throw new NoPermission('Admin rights required!');
+		}
 		$this->bo = new Bo();
 	}
 
