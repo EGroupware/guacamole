@@ -46,7 +46,7 @@ class Hooks
 		{
 			$file = Array(
 				//'Site Configuration' => Egw::link('/index.php','menuaction=admin.admin_config.index&appname=' . $appname,'&ajax=true'),
-				'Connections' => Egw::link('/index.php','menuaction='.Bo::APP.'.'.Ui::class.'.index&ajax=true'),
+				'Connections' => Egw::link('/index.php','menuaction='.Bo::APP.'.'.Ui::class.'.connections&ajax=true'),
 				/*'Global Categories'  => Egw::link('/index.php',array(
 					'menuaction' => 'admin.admin_categories.index',
 					'appname'    => $appname,

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<overlay>
+	<template id="guacamole.connections.rows" template="" lang="" group="0" version="19.1.001">
+		<grid width="100%">
+			<columns>
+				<column width="15"/>
+				<column width="15%"/>
+				<column width="120"/>
+				<column width="15%"/>
+			</columns>
+			<rows>
+				<row class="th">
+					<nextmatch-sortheader label="#" id="connection_id"/>
+					<nextmatch-header label="Name" id="connection_name"/>
+					<nextmatch-filterheader empty_label="Protocol" id="protocol"/>
+					<nextmatch-sortheader label="Hostname" id="#hostname"/>
+				</row>
+				<row class="$row_cont[cat_id] $row_cont[class]">
+					<description id="${row}[connection_id]"/>
+					<description id="${row}[connection_name]"/>
+					<select id="${row}[protocol]" readonly="true"/>
+					<description id="${row}[#hostname]"/>
+				</row>
+			</rows>
+		</grid>
+	</template>
+	<template id="guacamole.connections.add" template="" lang="" group="0" version="19.1.001">
+		<buttononly label="Add" id="add"
+			onclick="egw(window).openPopup(egw::link('/index.php','menuaction=guacamole.EGroupware\\Guacamole\\Ui.edit'),'640','480','_blank','admin'); return false;"/>
+	</template>
+	<template id="guacamole.connections" template="" lang="" group="0" version="19.1.001">
+		<nextmatch id="nm" options="guacamole.connections.rows" header_left="guacamole.connections.add"/>
+	</template>
+</overlay>
+

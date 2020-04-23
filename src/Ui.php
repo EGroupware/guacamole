@@ -22,6 +22,7 @@ class Ui
 	 */
 	public $public_functions = [
 		'index' => true,
+		'connections' => true,
 		'edit'  => true,
 	];
 
@@ -191,11 +192,11 @@ class Ui
 	}
 
 	/**
-	 * Index
+	 * List connections
 	 *
 	 * @param array $content =null
 	 */
-	public function index(array $content=null)
+	public function connections(array $content=null)
 	{
 		if (!is_array($content) || empty($content['nm']))
 		{
@@ -224,8 +225,8 @@ class Ui
 			}
 		}
 		Api\Translation::add_app(Bo::APP);
-		$tmpl = new Api\Etemplate(Bo::APP.'.index');
-		$tmpl->exec(Bo::APP.'.'.self::class.'.index', $content, [
+		$tmpl = new Api\Etemplate(Bo::APP.'.connections');
+		$tmpl->exec(Bo::APP.'.'.self::class.'.connections', $content, [
 			'protocol' => self::$protocols,
 		], [], ['nm' => $content['nm']]);
 	}
@@ -284,5 +285,16 @@ class Ui
 			default:
 				throw new Api\Exception\AssertionFailed("Unknown action '$action'!");
 		}
+	}
+
+	/**
+	 * Display Guacamole in an iframe
+	 *
+	 * @throws Api\Exception\AssertionFailed
+	 */
+	public function index()
+	{
+		$tmpl = new Api\Etemplate('guacamole.index');
+		$tmpl->exec(Bo::APP.'.'.self::class.'.index', []);
 	}
 }
