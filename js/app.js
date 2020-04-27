@@ -48,8 +48,13 @@ app.classes.guacamole = AppJS.extend(
         // call parent; somehow this function is called more often. (twice on a display and compose) why?
         this._super.apply(this, arguments);
 
-        switch (_name) {
-
+        switch (_name)
+        {
+            case 'guacamole.index':
+                // Attempt to refocus iframe upon click or keydown
+                document.addEventListener('click', jQuery.proxy(this.refocusGuacamole, this));
+                document.addEventListener('keydown', jQuery.proxy(this.refocusGuacamole, this));
+                break;
         }
     },
 
@@ -76,5 +81,23 @@ app.classes.guacamole = AppJS.extend(
             });
             framework.linkHandler(link, this.appname, false);
         }
+    },
+
+    /**
+     * Refocuses the iframe containing Guacamole if the user is not already
+     * focusing another non-body element on the page.
+     */
+    refocusGuacamole: function()
+    {
+        // Do not refocus if focus is on an input field
+        if (document.activeElement !== document.body ||
+            // or Guacamole is not visiable
+            framework && framework.activeApp.appName !== 'guacamole')
+        {
+            return;
+        }
+        // Ensure iframe is focused
+        let iframe = this.et2.getWidgetById('guacamole');
+        if (iframe) iframe.getDOMNode().focus();
     }
 });
