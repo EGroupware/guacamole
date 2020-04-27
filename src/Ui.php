@@ -157,7 +157,7 @@ class Ui
 				case 'delete':
 					if (!$this->bo->delete(['connection_id' => $content['connection_id']]))
 					{
-						Api\Framework::message(lang('Error deleting entry!'));
+						Api\Framework::message(lang('Error deleting connection!'));
 					}
 					else
 					{
@@ -301,6 +301,11 @@ class Ui
 	public function index()
 	{
 		$tmpl = new Api\Etemplate('guacamole.index');
+		// check if we have a url to load (only allow different fragments, not arbitrary url!)
+		if (!empty($_GET['load']) && preg_match( '|^/guacamole/(#.*)?$|', $_GET['load']))
+		{
+			$tmpl->setElementAttribute('guacamole', 'src', $_GET['load']);
+		}
 		$tmpl->exec(Bo::APP.'.'.self::class.'.index', []);
 	}
 }

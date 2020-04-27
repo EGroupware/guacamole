@@ -1,5 +1,6 @@
 %1 connection(s) deleted.	guacamole	en	%1 connection(s) deleted.
 256 colors (8 bit)	guacamole	en	256 Colors (8 bit)
+active sessions	admin	en	Active Sessions
 administer	guacamole	en	Administer
 color depth	guacamole	en	Color depth
 connection	guacamole	en	Connection
@@ -19,6 +20,8 @@ german (qwertz)	guacamole	en	German (Qwertz)
 guacamole	common	en	Guacamole
 high color (16 bit)	guacamole	en	High Color (16 bit)
 highest color (32 bit)	guacamole	en	Highest Color (32 bit)
+history	admin	en	History
+home	guacamole	en	Home
 hostname	guacamole	en	Hostname
 ignore certificate	guacamole	en	Ignore certificate
 italian (qwerty)	guacamole	en	Italian (Qwerty)
