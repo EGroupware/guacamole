@@ -22,6 +22,7 @@ class Bo extends Api\Storage
 	const EXTRA_VALUE = 'parameter_value';
 	const EXTRA_ID = 'connection_id';
 	const PERMS_TABLE = 'guacamole_connection_permission';
+	const ENTITY_TABLE = 'guacamole_entity';
 
 	static $connection_perms = ['READ', 'UPDATE', 'DELETE', 'ADMINISTER'];
 
@@ -68,13 +69,10 @@ class Bo extends Api\Storage
 	{
 		$perms = [];
 		foreach($this->db->select(self::PERMS_TABLE, '*', ['connection_id' => $connection_id],
-			__LINE__, __FILE__, false, '', self::APP) as $row)
+			__LINE__, __FILE__, false, '', self::APP, 0,
+			'JOIN '.self::ENTITY_TABLE.' ON '.self::PERMS_TABLE.'.entity_id='.self::ENTITY_TABLE.'.entity_id') as $row)
 		{
-			// entity_id is always positive, we need groups to be negative
-			if (($exists = $GLOBALS['egw']->accounts->exists($row['entity_id'])))
-			{
-				$perms[$row['permission']][] = ($exists === 2 ? -1 : 1)*$row['entity_id'];
-			}
+			$perms[$row['permission']][] = ($row['type'] === 'USER' ? 1 : -1)*$row['entity_id'];
 		}
 		return $perms;
 	}
