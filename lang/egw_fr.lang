@@ -1,0 +1,50 @@
+%1 connection(s) deleted.	guacamole	fr	%1 connexion(s) supprimée(s).
+256 colors (8 bit)	guacamole	fr	256 Couleurs(8 bit)
+active sessions	admin	fr	Sessions actives
+administer	guacamole	fr	Administrer
+color depth	guacamole	fr	Intensité de la couleur
+connection	guacamole	fr	Connexion
+connection deleted.	guacamole	fr	Connexion supprimée.
+connection not found!	guacamole	fr	Connexion non trouvée !
+connection saved.	guacamole	fr	Connexion enregistrée.
+connections	admin	fr	Connexions
+dansk (qwerty)	guacamole	fr	Dansk (Qwerty)
+display update (rdp 8.1+)	guacamole	fr	Mise àjour d'affichage (RDP 8.1+)
+english (gb) (qwerty)	guacamole	fr	English (GB) (Qwerty)
+english (us) (qwerty)	guacamole	fr	English (US) (Qwerty)
+error deleting connection!	guacamole	fr	Erreur à la suppression de la connexion !
+error storing connection!	guacamole	fr	Erreur à l'enregistrement de la connexion !
+font smoothing	guacamole	fr	Ajustement de police
+french (azerty)	guacamole	fr	Français (Azerty)
+german (qwertz)	guacamole	fr	German (Qwertz)
+guacamole	common	fr	Guacamole
+high color (16 bit)	guacamole	fr	65536 couleurs (16 bits)
+highest color (32 bit)	guacamole	fr	Qualité optimale (32 bits)
+history	admin	fr	Historique
+home	guacamole	fr	Accueil
+hostname	guacamole	fr	Nom d'hôte
+ignore certificate	guacamole	fr	Ignore le certificat
+italian (qwerty)	guacamole	fr	Italian (Qwerty)
+japanese (qwerty)	guacamole	fr	Japanese (Qwerty)
+keyboard layout	guacamole	fr	Disposition du clavier
+kubernetes	guacamole	fr	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	fr	Les membres du groupes Admins ont toutes les permissions sur toutes les connexions
+permissions	guacamole	fr	Autorisations
+port	guacamole	fr	Port
+portuguese (br) (qwerty)	guacamole	fr	Portuguese (BR) (Qwerty)
+protocol	guacamole	fr	Protocole
+rdp	guacamole	fr	TSE
+rdp settings	guacamole	fr	Paramètres TSE
+reconnect	guacamole	fr	Reconnecter
+resize method	guacamole	fr	Méthode de redimmensionnement
+spanish (qwerty)	guacamole	fr	Spanish (Qwerty)
+ssh	guacamole	fr	SSH
+swedish (qwerty)	guacamole	fr	Swedish (Qwerty)
+swiss french (qwertz)	guacamole	fr	Français suisse (Qwertz)
+swiss german (qwertz)	guacamole	fr	Swiss German (Qwertz)
+telnet	guacamole	fr	Telnet
+timezone	guacamole	fr	Fuseau horaire
+true color (24 bit)	guacamole	fr	Couleurs vraies (24 bit)
+turkish (qwerty)	guacamole	fr	Turkish (Qwerty)
+usage	guacamole	fr	Usage
+vnc	guacamole	fr	VNC
