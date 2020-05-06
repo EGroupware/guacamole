@@ -61,8 +61,8 @@ class Hooks
 					$link = "javascript:app.guacamole.load('$link')";
 				}
 			}
-			display_sidebox($appname, lang('Guacamole').' '.
-				($GLOBALS['egw_info']['user']['apps']['admin'] ? lang('Admin').' ' : '').lang('Menu'), $file);
+			display_sidebox($appname,
+				($GLOBALS['egw_info']['user']['apps']['admin'] ? lang('Admin') : lang('Guacamole').' '.lang('Menu')), $file);
 
 			display_sidebox($appname, lang('Help'), [
 				['text' => 'Using Guacamole', 'link' => 'https://guacamole.apache.org/doc/gug/using-guacamole.html', 'target' => '_blank'],
