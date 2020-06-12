@@ -1,0 +1,50 @@
+%1 connection(s) deleted.	guacamole	ru	%1 подключение(ий) удалено
+256 colors (8 bit)	guacamole	ru	258 цветов (8 бит)
+active sessions	admin	ru	Активные сессии
+administer	guacamole	ru	Управлять
+color depth	guacamole	ru	Глубина цвета
+connection	guacamole	ru	Подключение
+connection deleted.	guacamole	ru	Подключение удалено
+connection not found!	guacamole	ru	Подключение не найдено!
+connection saved.	guacamole	ru	Подключение сохранено
+connections	admin	ru	Подключения
+dansk (qwerty)	guacamole	ru	Датский (Qwerty)
+display update (rdp 8.1+)	guacamole	ru	обновить дисплей (RDP 8.1+)
+english (gb) (qwerty)	guacamole	ru	Английский (GB) (Qwerty)
+english (us) (qwerty)	guacamole	ru	Английский (US) (Qwerty)
+error deleting connection!	guacamole	ru	Ошибка удаления подключения!
+error storing connection!	guacamole	ru	Ошибка сохранения подключения!
+font smoothing	guacamole	ru	Сглаживание шрифта
+french (azerty)	guacamole	ru	Французский (Azerty)
+german (qwertz)	guacamole	ru	Немецкий (Qwertz)
+guacamole	common	ru	Guacamole
+high color (16 bit)	guacamole	ru	High Color (16 бит)
+highest color (32 bit)	guacamole	ru	Highest Color (32 бит)
+history	admin	ru	История
+home	guacamole	ru	Домой
+hostname	guacamole	ru	Имя хоста
+ignore certificate	guacamole	ru	Игнорировать сертификат
+italian (qwerty)	guacamole	ru	Итальянский (Qwerty)
+japanese (qwerty)	guacamole	ru	Японский (Qwerty)
+keyboard layout	guacamole	ru	Раскладка клавиатуры
+kubernetes	guacamole	ru	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	ru	Участники группы Admins имеют полные полномочия для всех подключений
+permissions	guacamole	ru	Полномочия
+port	guacamole	ru	Порт
+portuguese (br) (qwerty)	guacamole	ru	Португальский (BR) (Qwerty)
+protocol	guacamole	ru	Протокол
+rdp	guacamole	ru	RDP
+rdp settings	guacamole	ru	Настройки RDP
+reconnect	guacamole	ru	переподключение
+resize method	guacamole	ru	Метод смены размера
+spanish (qwerty)	guacamole	ru	Испанский (Qwerty)
+ssh	guacamole	ru	SSH
+swedish (qwerty)	guacamole	ru	Шведский (Qwerty)
+swiss french (qwertz)	guacamole	ru	Швейцарский французский (Qwertz)
+swiss german (qwertz)	guacamole	ru	Швейцарский немецкий (Qwertz)
+telnet	guacamole	ru	Telnet
+timezone	guacamole	ru	Временная зона
+true color (24 bit)	guacamole	ru	True Color (24 бит)
+turkish (qwerty)	guacamole	ru	Турецкий (Qwerty)
+usage	guacamole	ru	Применение
+vnc	guacamole	ru	VNC
