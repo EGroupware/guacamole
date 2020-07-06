@@ -21,6 +21,12 @@ services:
       # guacamole-user-password must NOT contain special chars, eg. use the following to generate a save one: openssl rand --hex 16
       MYSQL_PASSWORD: guacamole-user-password
       GUACAMOLE_HOME: /etc/guacamole
+      # see https://github.com/apache/guacamole-client/blob/master/guacamole-docker/bin/start.sh#L552
+      OPENID_AUTHORIZATION_ENDPOINT: https://example.org/egroupware/openid/endpoint.php/authorize
+      OPENID_JWKS_ENDPOINT: https://example.org/egroupware/openid/endpoint.php/jwks
+      OPENID_ISSUER: https://example.org
+      OPENID_CLIENT_ID: guacamole
+      OPENID_REDIRECT_URI: https://example.org/guacamole/
     image: guacamole/guacamole
     links:
       - guacd

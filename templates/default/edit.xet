@@ -63,6 +63,32 @@
 			</rows>
 		</grid>
 	</template>
+	<template id="guacamole.edit.wakeonlan" template="" lang="" group="0" version="19.1">
+		<grid width="100%">
+			<columns>
+				<column width="200"/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<description for="#wol-send-package" value="Send WoL package"/>
+					<checkbox value="true" id="#wol-send-package"/>
+				</row>
+				<row>
+					<description for="#wol-broadcast-addr" value="MAC address of remote host"/>
+					<textbox id="#wol-broadcast-addr" size="15" validator="/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/"/>
+				</row>
+				<row>
+					<description for="#wol-mac-addr" value="Broadcast address for WoL package"/>
+					<textbox id="#wol-mac-addr" validator="/^([a-f0-9]{1,2}:?){6}$/i"/>
+				</row>
+				<row>
+					<description for="#wol-wait-time" value="Host boot wait time (seconds)"/>
+					<integer id="#wol-wait-time" min="10" step="10"/>
+				</row>
+			</rows>
+		</grid>
+	</template>
 	<template id="guacamole.edit" template="" lang="" group="0" version="19.1">
 		<grid width="100%">
 			<columns>
@@ -97,10 +123,12 @@
 						<tabs>
 							<tab id="guacamole.edit.rdp" label="RDP settings"/>
 							<tab id="guacamole.edit.perms" label="Permissions"/>
+							<tab id="guacamole.edit.wakeonlan" label="Wake-on-LAN (WoL)"/>
 						</tabs>
 						<tabpanels>
 							<template id="guacamole.edit.rdp"/>
 							<template id="guacamole.edit.perms"/>
+							<template id="guacamole.edit.wakeonlan"/>
 						</tabpanels>
 					</tabbox>
 				</row>
