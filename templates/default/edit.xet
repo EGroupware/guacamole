@@ -71,16 +71,16 @@
 			</columns>
 			<rows>
 				<row>
-					<description for="#wol-send-package" value="Send WoL package"/>
-					<checkbox value="true" id="#wol-send-package"/>
+					<description for="#wol-send-packet" value="Send WoL package"/>
+					<checkbox id="#wol-send-packet" selected_value="true"/>
 				</row>
 				<row>
 					<description for="#wol-broadcast-addr" value="MAC address of remote host"/>
-					<textbox id="#wol-broadcast-addr" size="15" validator="/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$/"/>
+					<textbox id="#wol-broadcast-addr" size="15" validator="/^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})?$/"/>
 				</row>
 				<row>
 					<description for="#wol-mac-addr" value="Broadcast address for WoL package"/>
-					<textbox id="#wol-mac-addr" validator="/^([a-f0-9]{1,2}:?){6}$/i"/>
+					<textbox id="#wol-mac-addr" validator="/^(([a-f0-9]{1,2}:?){6})?$/i"/>
 				</row>
 				<row>
 					<description for="#wol-wait-time" value="Host boot wait time (seconds)"/>
