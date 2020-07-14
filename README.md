@@ -23,7 +23,7 @@
 #### Instructions to integrate Guacamole in an EGroupware installation via Docker
 > A deb or rpm package installation via egroupware-guacamole package, available from our usual repository, does NOT require anything mentioned here!
 
-Following files are fragments to be included in an [EGroupware Docker](https://github.com/EGroupware/egroupware/tree/master/doc/docker) or [development](https://github.com/EGroupware/egroupware/tree/master/doc/docker/development) installation.
+Following files are fragments to be included in an [EGroupware Docker](https://github.com/EGroupware/egroupware/tree/master/doc/docker) or [development](https://github.com/EGroupware/egroupware/tree/master/doc/docker/development) installation. You need to replace example.org with your domain!
 
 First you need to create a database account for Guacamole:
 > docker-compose has problems with passwords containing special chars, use a eg. the following to create a safe password:
@@ -54,6 +54,12 @@ docker-compose.yaml:
       MYSQL_USER: guacamole
       MYSQL_PASSWORD: guacamole-user-password
       GUACAMOLE_HOME: /etc/guacamole
+      # see https://github.com/apache/guacamole-client/blob/master/guacamole-docker/bin/start.sh#L552
+      OPENID_AUTHORIZATION_ENDPOINT: https://example.org/egroupware/openid/endpoint.php/authorize
+      OPENID_JWKS_ENDPOINT: https://example.org/egroupware/openid/endpoint.php/jwks
+      OPENID_ISSUER: https://example.org
+      OPENID_CLIENT_ID: guacamole
+      OPENID_REDIRECT_URI: https://example.org/guacamole/
     image: guacamole/guacamole
     links:
     - guacd
@@ -99,19 +105,11 @@ apache.conf:
 ```
 Create /etc/guacamole to be mounted into the container:
 ```
-mkdir -p /etc/egroupware-guacamole/guacamole-home/extensions
-cd /etc/guacamole/extensions
-ln -s /opt/guacamole/openid/guacamole-auth-openid-1.1.0.jar 00-guacamole-auth-openid-1.1.0.jar
+mkdir -p /etc/egroupware-guacamole/guacamole-home
 ```
 /etc/guacamole/guacamole.properties:
 ```
 # OpenIDConnect configuration (https://guacamole.apache.org/doc/gug/openid-auth.html#guac-openid-config)
-# https://lemonldap-ng.org/documentation/latest/applications/guacamole
-openid-authorization-endpoint: https://example.org/egroupware/openid/endpoint.php/authorize
-openid-jwks-endpoint: https://example.org/egroupware/openid/endpoint.php/jwks
-openid-issuer: https://example.org
-openid-client-id: guacamole
-openid-redirect-uri: https://example.org/guacamole/
 openid-username-claim-type: sub
 openid-scope: openid profile email
 ```
