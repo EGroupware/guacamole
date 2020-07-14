@@ -75,11 +75,11 @@
 					<checkbox id="#wol-send-packet" selected_value="true"/>
 				</row>
 				<row>
-					<description for="#wol-broadcast-addr" value="MAC address of remote host"/>
-					<textbox id="#wol-broadcast-addr" size="15" validator="/^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})?$/"/>
+					<description for="#wol-broadcast-addr" value="Broadcast address for WoL package"/>
+					<textbox id="#wol-broadcast-addr" size="15" validator="/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})?$/"/>
 				</row>
 				<row>
-					<description for="#wol-mac-addr" value="Broadcast address for WoL package"/>
+					<description for="#wol-mac-addr" value="MAC address of remote host"/>
 					<textbox id="#wol-mac-addr" validator="/^(([a-f0-9]{1,2}:?){6})?$/i"/>
 				</row>
 				<row>
