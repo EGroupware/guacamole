@@ -206,7 +206,7 @@ CREATE TABLE `guacamole_user_group` (
 --
 
 CREATE OR REPLACE VIEW guacamole_user_group_member AS
-SELECT ABS(CAST(acl_location AS INTEGER)) AS user_group_id, acl_account AS member_entity_id
+SELECT ABS(CAST(acl_location AS SIGNED)) AS user_group_id, acl_account AS member_entity_id
 FROM egroupware.egw_acl
 WHERE acl_appname='phpgw_group';
 
@@ -501,7 +501,7 @@ WHERE acl_appname='guacamole' AND acl_location IN ('ADMINISTER','CONNECTION','CO
 UNION
 (SELECT members.acl_account AS entity_id, CASE WHEN egw_acl.acl_location='ADMINISTER' THEN egw_acl.acl_location ELSE CONCAT('CREATE_', egw_acl.acl_location) END AS permission
 FROM egroupware.egw_acl
-JOIN egroupware.egw_acl members ON members.acl_appname='phpgw_group' AND CAST(members.acl_location AS INTEGER)=egw_acl.acl_account
+JOIN egroupware.egw_acl members ON members.acl_appname='phpgw_group' AND CAST(members.acl_location AS SIGNED)=egw_acl.acl_account
 WHERE egw_acl.acl_appname='guacamole' AND egw_acl.acl_location IN ('ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE') AND egw_acl.acl_account < 0);
 /* CREATE_ prefix is NOT stored, as acl_location is only varchar(16) */
 
