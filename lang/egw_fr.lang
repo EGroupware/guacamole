@@ -1,7 +1,9 @@
+#	guacamole	fr	#
 %1 connection(s) deleted.	guacamole	fr	%1 connexion(s) supprimée(s).
 256 colors (8 bit)	guacamole	fr	256 Couleurs(8 bit)
 active sessions	admin	fr	Sessions actives
 administer	guacamole	fr	Administrer
+broadcast address for wol package	guacamole	fr	Diffuser l'adresse pour le logiciel WoL
 color depth	guacamole	fr	Intensité de la couleur
 connection	guacamole	fr	Connexion
 connection deleted.	guacamole	fr	Connexion supprimée.
@@ -22,12 +24,14 @@ high color (16 bit)	guacamole	fr	65536 couleurs (16 bits)
 highest color (32 bit)	guacamole	fr	Qualité optimale (32 bits)
 history	admin	fr	Historique
 home	guacamole	fr	Accueil
+host boot wait time (seconds)	guacamole	fr	Temps de démarrage de l'hôte (secondes)
 hostname	guacamole	fr	Nom d'hôte
 ignore certificate	guacamole	fr	Ignore le certificat
 italian (qwerty)	guacamole	fr	Italian (Qwerty)
 japanese (qwerty)	guacamole	fr	Japanese (Qwerty)
 keyboard layout	guacamole	fr	Disposition du clavier
 kubernetes	guacamole	fr	Kubernetes
+mac address of remote host	guacamole	fr	Adresse MAC de l'hôte distant
 members of admins group have full permissions for all connections.	guacamole	fr	Les membres du groupes Admins ont toutes les permissions sur toutes les connexions
 permissions	guacamole	fr	Autorisations
 port	guacamole	fr	Port
@@ -37,6 +41,7 @@ rdp	guacamole	fr	TSE
 rdp settings	guacamole	fr	Paramètres TSE
 reconnect	guacamole	fr	Reconnecter
 resize method	guacamole	fr	Méthode de redimmensionnement
+send wol package	guacamole	fr	Envoyer le paquet WoL
 spanish (qwerty)	guacamole	fr	Spanish (Qwerty)
 ssh	guacamole	fr	SSH
 swedish (qwerty)	guacamole	fr	Swedish (Qwerty)
@@ -48,3 +53,4 @@ true color (24 bit)	guacamole	fr	Couleurs vraies (24 bit)
 turkish (qwerty)	guacamole	fr	Turkish (Qwerty)
 usage	guacamole	fr	Usage
 vnc	guacamole	fr	VNC
+wake-on-lan (wol)	guacamole	fr	Wake-on-LAN (WoL)
