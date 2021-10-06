@@ -123,7 +123,7 @@ class Ui
 				]);
 			}
 		}
-		else
+		elseif (!empty($content['button']))
 		{
 			$button = key($content['button']);
 			unset($content['button']);
