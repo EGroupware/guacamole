@@ -21,7 +21,7 @@
 * [Guacamole category in our forum](https://help.egroupware.org/c/apps/guacamole) with some informative articles
 
 #### Instructions to integrate Guacamole in an EGroupware installation via Docker
-> A deb or rpm package installation via egroupware-guacamole package, available from our usual repository, does NOT require anything mentioned here!
+> **A deb or rpm package installation via egroupware-guacamole package, available from our usual repository, does NOT require anything mentioned here!
 
 Following files are fragments to be included in an [EGroupware Docker](https://github.com/EGroupware/egroupware/tree/master/doc/docker) or [development](https://github.com/EGroupware/egroupware/tree/master/doc/docker/development) installation. You need to replace example.org with your domain!
 
