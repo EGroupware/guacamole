@@ -68,7 +68,7 @@ class Hooks
 				['text' => 'Using Guacamole', 'link' => 'https://guacamole.apache.org/doc/gug/using-guacamole.html', 'target' => '_blank'],
 				['text' => 'Administrating Guacamole', 'link' => 'https://guacamole.apache.org/doc/gug/administration.html', 'target' => '_blank'],
 				['text' => 'Frequently Asked Questions', 'link' => 'https://guacamole.apache.org/faq/', 'target' => '_blank'],
-				['text' => 'Forum', 'link' => 'https://help.egroupware.org/c/deutsch/guacamole', 'target' => '_blank'],
+				['text' => 'Forum', 'link' => 'https://help.egroupware.org/c/apps/guacamole', 'target' => '_blank'],
 			]);
 		}
 	}
