@@ -18,7 +18,7 @@
 * [Using Guacamole section of Guacamole manual](https://guacamole.apache.org/doc/gug/using-guacamole.html)
 * [Administration section of Guacamole manual](https://guacamole.apache.org/doc/gug/administration.html) (keep in mind to use EGroupware UI to assign connection permissions!)
 * [Frequently Asked Questions from Guacamole](https://guacamole.apache.org/faq/)
-* [Guacamole category in our forum](https://help.egroupware.org/c/deutsch/guacamole) with some informative articles
+* [Guacamole category in our forum](https://help.egroupware.org/c/apps/guacamole) with some informative articles
 
 #### Instructions to integrate Guacamole in an EGroupware installation via Docker
 > A deb or rpm package installation via egroupware-guacamole package, available from our usual repository, does NOT require anything mentioned here!
