@@ -8,9 +8,6 @@
  * @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
  */
 
-import {AppJS} from "../../api/js/jsapi/app_base.js";
-import {egw} from "../../api/js/jsapi/egw_global";
-
 app.classes.guacamole = AppJS.extend(
 {
     appname: 'guacamole',
