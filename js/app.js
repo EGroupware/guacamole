@@ -8,6 +8,10 @@
  * @license http://opensource.org/licenses/gpl-license.php GPL - GNU General Public License
  */
 
+// conditional import AppJS for 23.1+, but not for non-module include of 21.1 and before, as an import gives a JS syntax error if not in module context
+//import {AppJS} from "../../api/js/jsapi/app_base.js";
+(typeof window.$LAB === 'undefined' ? import("../../api/js/jsapi/app_base.js") : Promise.resolve()).then(() => {
+
 app.classes.guacamole = AppJS.extend(
 {
     appname: 'guacamole',
@@ -101,3 +105,5 @@ app.classes.guacamole = AppJS.extend(
         if (iframe) iframe.getDOMNode().focus();
     }
 });
+
+}); // conditional import AppJS
