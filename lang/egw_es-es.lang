@@ -1,6 +1,9 @@
 %1 connection(s) deleted.	guacamole	es-es	%1
 256 colors (8 bit)	guacamole	es-es	256 colores (8 bit)
 active sessions	admin	es-es	Sesiones activas
+administer	guacamole	es-es	Administrar
+broadcast address for wol package	guacamole	es-es	Dirección de transmisión para el paquete WoL
+color depth	guacamole	es-es	Profundidad del color
 connection	guacamole	es-es	Conexión
 connection deleted.	guacamole	es-es	Conexión suprimida
 connection not found!	guacamole	es-es	¡Conexión no encontrada!
@@ -16,14 +19,19 @@ german (qwertz)	guacamole	es-es	Alemán (Qwerty)
 guacamole	common	es-es	Guacamole
 high color (16 bit)	guacamole	es-es	Color alto (16 bits)
 highest color (32 bit)	guacamole	es-es	Color más alto (32 bits)
-history	admin	es-es	Historia
+home	guacamole	es-es	Inicio
+hostname	guacamole	es-es	Nombre del servidor
 ignore certificate	guacamole	es-es	Ignorar certificado
 italian (qwerty)	guacamole	es-es	Italiano (Qwerty)
 japanese (qwerty)	guacamole	es-es	Japonés (Qwerty)
 keyboard layout	guacamole	es-es	Diseño del teclado
+mac address of remote host	guacamole	es-es	Dirección MAC del servidor remoto
+permissions	guacamole	es-es	Permisos
 port	guacamole	es-es	Puerto
 portuguese (br) (qwerty)	guacamole	es-es	Portugués (BR) (Qwerty)
 protocol	guacamole	es-es	Protocolo
+reconnect	guacamole	es-es	reconectar
+resize method	guacamole	es-es	Método para redimensionar
 spanish (qwerty)	guacamole	es-es	Español (Qwerty)
 ssh	guacamole	es-es	SSH
 swedish (qwerty)	guacamole	es-es	Sueco (Qwerty)
@@ -35,3 +43,4 @@ true color (24 bit)	guacamole	es-es	Color verdadero (24 bits)
 turkish (qwerty)	guacamole	es-es	Turco (Qwerty)
 usage	guacamole	es-es	Uso
 vnc	guacamole	es-es	VNC
+wake-on-lan (wol)	guacamole	es-es	Encendido remoto (WoL)
