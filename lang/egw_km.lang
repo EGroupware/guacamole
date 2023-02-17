@@ -1,0 +1,54 @@
+%1 connection(s) deleted.	guacamole	km	ការតភ្ជាប់ %1 ត្រូវបានលុប។
+256 colors (8 bit)	guacamole	km	256 ពណ៌ (8 ប៊ីត)
+active sessions	admin	km	វគ្គសកម្ម
+administer	guacamole	km	អ្នកគ្រប់គ្រង
+broadcast address for wol package	guacamole	km	អាសយដ្ឋានផ្សាយសម្រាប់កញ្ចប់ WoL
+color depth	guacamole	km	ជម្រៅពណ៌
+connection	guacamole	km	ការតភ្ជាប់
+connection deleted.	guacamole	km	ការតភ្ជាប់ត្រូវបានលុប។
+connection not found!	guacamole	km	រកមិនឃើញការតភ្ជាប់!
+connection saved.	guacamole	km	បានរក្សាទុកការតភ្ជាប់។
+connections	admin	km	ការតភ្ជាប់
+dansk (qwerty)	guacamole	km	Dansk (Qwerty)
+display update (rdp 8.1+)	guacamole	km	បង្ហាញបច្ចុប្បន្នភាព (RDP 8.1+)
+english (gb) (qwerty)	guacamole	km	ភាសាអង់គ្លេស (GB) (Qwerty)
+english (us) (qwerty)	guacamole	km	អង់គ្លេស (សហរដ្ឋអាមេរិក) (Qwerty)
+error deleting connection!	guacamole	km	កំហុសក្នុងការលុបការតភ្ជាប់!
+error storing connection!	guacamole	km	កំហុសក្នុងការរក្សាទុកការតភ្ជាប់!
+font smoothing	guacamole	km	ការធ្វើឱ្យពុម្ពអក្សររលោង
+french (azerty)	guacamole	km	បារាំង (Azerty)
+german (qwertz)	guacamole	km	អាល្លឺម៉ង់ (Qwertz)
+guacamole	common	km	ហ្កាកាម៉ូល
+high color (16 bit)	guacamole	km	ពណ៌ខ្ពស់ (១៦ ប៊ីត)
+highest color (32 bit)	guacamole	km	ពណ៌ខ្ពស់បំផុត (32 ប៊ីត)
+home	guacamole	km	ផ្ទះ
+host boot wait time (seconds)	guacamole	km	ពេលវេលារង់ចាំម៉ាស៊ីនចាប់ផ្ដើម (វិនាទី)
+hostname	guacamole	km	ឈ្មោះម៉ាស៊ីន
+ignore certificate	guacamole	km	មិនអើពើវិញ្ញាបនបត្រ
+italian (qwerty)	guacamole	km	អ៊ីតាលី (Qwerty)
+japanese (qwerty)	guacamole	km	ជប៉ុន (Qwerty)
+keyboard layout	guacamole	km	ប្លង់ក្តារចុច
+kubernetes	guacamole	km	Kubernetes
+mac address of remote host	guacamole	km	អាសយដ្ឋាន MAC របស់ម៉ាស៊ីនពីចម្ងាយ
+members of admins group have full permissions for all connections.	guacamole	km	សមាជិកនៃក្រុមអ្នកគ្រប់គ្រងមានការអនុញ្ញាតពេញលេញសម្រាប់ការតភ្ជាប់ទាំងអស់។
+permissions	guacamole	km	ការអនុញ្ញាត
+port	guacamole	km	ច្រក
+portuguese (br) (qwerty)	guacamole	km	ព័រទុយហ្គាល់ (BR) (Qwerty)
+protocol	guacamole	km	ពិធីការ
+rdp	guacamole	km	RDP
+rdp settings	guacamole	km	ការកំណត់ RDP
+reconnect	guacamole	km	ភ្ជាប់ឡើងវិញ
+resize method	guacamole	km	វិធីសាស្រ្តផ្លាស់ប្តូរទំហំ
+send wol package	guacamole	km	ផ្ញើកញ្ចប់ WoL
+spanish (qwerty)	guacamole	km	ភាសាអេស្ប៉ាញ (Qwerty)
+ssh	guacamole	km	SSH
+swedish (qwerty)	guacamole	km	ស៊ុយអែត (Qwerty)
+swiss french (qwertz)	guacamole	km	ភាសាបារាំងស្វីស (Qwertz)
+swiss german (qwertz)	guacamole	km	ស្វ៊ីសអាល្លឺម៉ង់ (Qwertz)
+telnet	guacamole	km	Telnet
+timezone	guacamole	km	ល្វែងម៉ោង
+true color (24 bit)	guacamole	km	ពណ៌ពិត (24 ប៊ីត)
+turkish (qwerty)	guacamole	km	ទួរគី (Qwerty)
+usage	guacamole	km	ការប្រើប្រាស់
+vnc	guacamole	km	VNC
+wake-on-lan (wol)	guacamole	km	Wake-on-LAN (WoL)
