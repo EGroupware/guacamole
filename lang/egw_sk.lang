@@ -1,1 +1,54 @@
+%1 connection(s) deleted.	guacamole	sk	%1 spojení bolo odstránených.
+256 colors (8 bit)	guacamole	sk	256 farieb (8 bit)
+active sessions	admin	sk	Aktívne relácie
+administer	guacamole	sk	Spravovať
+broadcast address for wol package	guacamole	sk	Broadcastová adresa pre balík WoL
+color depth	guacamole	sk	Farebná hĺbka
+connection	guacamole	sk	Spojenie
+connection deleted.	guacamole	sk	Spojenie bolo odstránené.
+connection not found!	guacamole	sk	Spojenie sa nenašlo!
+connection saved.	guacamole	sk	Spojenie bolo uložené.
+connections	admin	sk	Spojenia
+dansk (qwerty)	guacamole	sk	Dansk (Qwerty)
+display update (rdp 8.1+)	guacamole	sk	Obnova obrazovky (RDP 8.1+)
+english (gb) (qwerty)	guacamole	sk	English (GB) (Qwerty)
+english (us) (qwerty)	guacamole	sk	English (US) (Qwerty)
+error deleting connection!	guacamole	sk	Pri odstraňovaní spojenia nastala chyba!
+error storing connection!	guacamole	sk	Pri ukladaní spojenia nastala chyba!
+font smoothing	guacamole	sk	Vyhladzovanie písma
+french (azerty)	guacamole	sk	French (Azerty)
+german (qwertz)	guacamole	sk	German (Qwertz)
 guacamole	common	sk	Guacamole
+high color (16 bit)	guacamole	sk	Farebné (16 bit)
+highest color (32 bit)	guacamole	sk	Najpresnejšie farby (32 bit)
+home	guacamole	sk	Domov
+host boot wait time (seconds)	guacamole	sk	Čakanie na štart (v sekundách)
+hostname	guacamole	sk	Názov počítača
+ignore certificate	guacamole	sk	Ignorovať certifikát
+italian (qwerty)	guacamole	sk	Italian (Qwerty)
+japanese (qwerty)	guacamole	sk	Japanese (Qwerty)
+keyboard layout	guacamole	sk	Rozloženie klávesnice
+kubernetes	guacamole	sk	Kubernetes
+mac address of remote host	guacamole	sk	MAC adresa vzdialeného počítača
+members of admins group have full permissions for all connections.	guacamole	sk	Členovia skupiny Admins majú plné prístupové oprávnenia pre všetky spojenia.
+permissions	guacamole	sk	Prístupové oprávnenia
+port	guacamole	sk	Port
+portuguese (br) (qwerty)	guacamole	sk	Portuguese (BR) (Qwerty)
+protocol	guacamole	sk	Protokol
+rdp	guacamole	sk	RDP
+rdp settings	guacamole	sk	Nastavenia RDP
+reconnect	guacamole	sk	Znovu pripojiť
+resize method	guacamole	sk	Metóda zmeny mierky
+send wol package	guacamole	sk	Poslať balík WoL
+spanish (qwerty)	guacamole	sk	Spanish (Qwerty)
+ssh	guacamole	sk	SSH
+swedish (qwerty)	guacamole	sk	Swedish (Qwerty)
+swiss french (qwertz)	guacamole	sk	Swiss French (Qwertz)
+swiss german (qwertz)	guacamole	sk	Swiss German (Qwertz)
+telnet	guacamole	sk	Telnet
+timezone	guacamole	sk	Časové pásmo
+true color (24 bit)	guacamole	sk	Plnofarebné (24 bit)
+turkish (qwerty)	guacamole	sk	Turkish (Qwerty)
+usage	guacamole	sk	Využitie
+vnc	guacamole	sk	VNC
+wake-on-lan (wol)	guacamole	sk	Wake-on-LAN (WoL)
