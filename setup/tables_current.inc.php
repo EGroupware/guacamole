@@ -42,7 +42,7 @@ $phpgw_baseline = array(
 	),
 	'guacamole_connection_permission' => array(
 		'fd' => array(
-			'entity_id' => array('type' => 'int','precision' => 4,'nullable' => False),
+			'entity_id' => array('type' => 'int','precision' => 4,'meta' => 'account-abs','nullable' => False),
 			'connection_id' => array('type' => 'int','precision' => '4','nullable' => False),
 			'permission' => array('type' => 'varchar','precision' => '10','nullable' => False),
 		),
