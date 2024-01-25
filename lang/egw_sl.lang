@@ -1,1 +1,11 @@
+%1 connection(s) deleted.	guacamole	sl	%1 povezave so izbrisane.
+256 colors (8 bit)	guacamole	sl	256 barv (8 bitov)
+active sessions	admin	sl	Aktivne seje
+administer	guacamole	sl	Upravljanje
+broadcast address for wol package	guacamole	sl	Oddajni naslov za paket WoL
+color depth	guacamole	sl	Barvna globina
+connection	guacamole	sl	Povezava
+connection deleted.	guacamole	sl	Povezava izbrisana.
+connection not found!	guacamole	sl	Povezava ni bila najdena!
 guacamole	common	sl	Guacamole
+wake-on-lan (wol)	guacamole	sl	Bujenje v omrežju LAN (WoL)

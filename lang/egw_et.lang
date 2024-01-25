@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	et	%1 ühendus(ed) kustutatud.
+256 colors (8 bit)	guacamole	et	256 värvi (8 bit)
+active sessions	admin	et	Aktiivsed seansid
+administer	guacamole	et	Administreeri
+broadcast address for wol package	guacamole	et	WoL-paketi saateaadress
+color depth	guacamole	et	Värvisügavus
+connection	guacamole	et	Ühendus
+connection deleted.	guacamole	et	Ühendus kustutatud.
+connection not found!	guacamole	et	Ühendust ei leitud!
 guacamole	common	et	Guacamole

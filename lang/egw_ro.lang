@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	ro	%1 conexiune(e) ștearsă(e).
+256 colors (8 bit)	guacamole	ro	256 culori (8 biți)
+active sessions	admin	ro	Sesiuni active
+administer	guacamole	ro	Administrează
+broadcast address for wol package	guacamole	ro	Adresa de difuzare pentru pachetul WoL
+color depth	guacamole	ro	Adâncimea culorilor
+connection	guacamole	ro	Conexiune
+connection deleted.	guacamole	ro	Conexiune ștearsă.
+connection not found!	guacamole	ro	Conexiunea nu a fost găsită!
 guacamole	common	ro	Guacamole

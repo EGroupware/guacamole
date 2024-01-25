@@ -1,1 +1,11 @@
+%1 connection(s) deleted.	guacamole	tr	%1 bağlantı(lar) silindi.
+256 colors (8 bit)	guacamole	tr	256 Renk (8 bit)
+active sessions	admin	tr	Aktif Oturumlar
+administer	guacamole	tr	Yönetmek
+broadcast address for wol package	guacamole	tr	WoL paketi için yayın adresi
+color depth	guacamole	tr	Renk derinliği
+connection	guacamole	tr	Bağlantı
+connection deleted.	guacamole	tr	Bağlantı silindi.
+connection not found!	guacamole	tr	Bağlantı bulunamadı!
 guacamole	common	tr	Guacamole
+wake-on-lan (wol)	guacamole	tr	Wake-on-LAN (WoL)

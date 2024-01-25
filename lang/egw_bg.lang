@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	bg	%1 изтрити връзки.
+256 colors (8 bit)	guacamole	bg	256 цвята (8 бита)
+active sessions	admin	bg	Активни сесии
+administer	guacamole	bg	Администриране на
+broadcast address for wol package	guacamole	bg	Адрес за излъчване на пакета WoL
+color depth	guacamole	bg	Дълбочина на цветовете
+connection	guacamole	bg	Връзка
+connection deleted.	guacamole	bg	Изтрита връзка.
+connection not found!	guacamole	bg	Връзката не е намерена!
 guacamole	common	bg	Guacamole

@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	lt	%1 ryšys (-iai) pašalintas (-i).
+256 colors (8 bit)	guacamole	lt	256 spalvos (8 bitų)
+active sessions	admin	lt	Aktyvios sesijos
+administer	guacamole	lt	Administruoti
+broadcast address for wol package	guacamole	lt	WoL paketo transliavimo adresas
+color depth	guacamole	lt	Spalvų gylis
+connection	guacamole	lt	Ryšys
+connection deleted.	guacamole	lt	Ryšys pašalintas.
+connection not found!	guacamole	lt	Ryšys nerastas!
 guacamole	common	lt	Guacamole

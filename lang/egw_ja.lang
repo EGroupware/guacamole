@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	ja	%1 つの接続が削除されました。
+256 colors (8 bit)	guacamole	ja	256 色 (8 ビット)
+active sessions	admin	ja	アクティブなセッション
+administer	guacamole	ja	管理者
+broadcast address for wol package	guacamole	ja	WoL パッケージのブロードキャスト・アドレス
+color depth	guacamole	ja	色の深さ
+connection	guacamole	ja	接続
+connection deleted.	guacamole	ja	接続が削除されました。
+connection not found!	guacamole	ja	接続が見つかりません！
 guacamole	common	ja	Guacamole

@@ -2,6 +2,7 @@
 256 colors (8 bit)	guacamole	ru	258 цветов (8 бит)
 active sessions	admin	ru	Активные сессии
 administer	guacamole	ru	Управлять
+broadcast address for wol package	guacamole	ru	Адрес вещания для пакета WoL
 color depth	guacamole	ru	Глубина цвета
 connection	guacamole	ru	Подключение
 connection deleted.	guacamole	ru	Подключение удалено
@@ -20,14 +21,15 @@ german (qwertz)	guacamole	ru	Немецкий (Qwertz)
 guacamole	common	ru	Guacamole
 high color (16 bit)	guacamole	ru	High Color (16 бит)
 highest color (32 bit)	guacamole	ru	Highest Color (32 бит)
-history	admin	ru	История
 home	guacamole	ru	Домой
+host boot wait time (seconds)	guacamole	ru	Время ожидания загрузки хоста (секунды)
 hostname	guacamole	ru	Имя хоста
 ignore certificate	guacamole	ru	Игнорировать сертификат
 italian (qwerty)	guacamole	ru	Итальянский (Qwerty)
 japanese (qwerty)	guacamole	ru	Японский (Qwerty)
 keyboard layout	guacamole	ru	Раскладка клавиатуры
 kubernetes	guacamole	ru	Kubernetes
+mac address of remote host	guacamole	ru	MAC-адрес удаленного хоста
 members of admins group have full permissions for all connections.	guacamole	ru	Участники группы Admins имеют полные полномочия для всех подключений
 permissions	guacamole	ru	Полномочия
 port	guacamole	ru	Порт
@@ -37,6 +39,7 @@ rdp	guacamole	ru	RDP
 rdp settings	guacamole	ru	Настройки RDP
 reconnect	guacamole	ru	переподключение
 resize method	guacamole	ru	Метод смены размера
+send wol package	guacamole	ru	Отправить WoL-пакет
 spanish (qwerty)	guacamole	ru	Испанский (Qwerty)
 ssh	guacamole	ru	SSH
 swedish (qwerty)	guacamole	ru	Шведский (Qwerty)
@@ -48,3 +51,4 @@ true color (24 bit)	guacamole	ru	True Color (24 бит)
 turkish (qwerty)	guacamole	ru	Турецкий (Qwerty)
 usage	guacamole	ru	Применение
 vnc	guacamole	ru	VNC
+wake-on-lan (wol)	guacamole	ru	Wake-on-LAN (WoL)

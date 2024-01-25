@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	zh	已删除 %1 个连接。
+256 colors (8 bit)	guacamole	zh	256 色（8 位）
+active sessions	admin	zh	活动会话
+administer	guacamole	zh	管理
+broadcast address for wol package	guacamole	zh	WoL 软件包的广播地址
+color depth	guacamole	zh	颜色深度
+connection	guacamole	zh	连接
+connection deleted.	guacamole	zh	连接已删除。
+connection not found!	guacamole	zh	未找到连接！
 guacamole	common	zh	Guacamole

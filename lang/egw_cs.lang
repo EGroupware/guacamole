@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	cs	%1 spojení odstraněno.
+256 colors (8 bit)	guacamole	cs	256 barev (8 bitů)
+active sessions	admin	cs	Aktivní relace
+administer	guacamole	cs	Spravovat
+broadcast address for wol package	guacamole	cs	Vysílací adresa pro balíček WoL
+color depth	guacamole	cs	Barevná hloubka
+connection	guacamole	cs	Připojení
+connection deleted.	guacamole	cs	Připojení odstraněno.
+connection not found!	guacamole	cs	Připojení nebylo nalezeno!
 guacamole	common	cs	Guacamole

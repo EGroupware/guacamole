@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	lv	%1 savienojums(-i) dzēsts(-i).
+256 colors (8 bit)	guacamole	lv	256 krāsas (8 bitu)
+active sessions	admin	lv	Aktīvās sesijas
+administer	guacamole	lv	Administrēt
+broadcast address for wol package	guacamole	lv	WoL paketes apraides adrese
+color depth	guacamole	lv	Krāsu dziļums
+connection	guacamole	lv	Savienojums
+connection deleted.	guacamole	lv	Savienojums dzēsts.
+connection not found!	guacamole	lv	Savienojums nav atrasts!
 guacamole	common	lv	Guacamole

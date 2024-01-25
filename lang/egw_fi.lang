@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	fi	%1 yhteys(t) poistettu.
+256 colors (8 bit)	guacamole	fi	256 väriä (8 bittiä)
+active sessions	admin	fi	Aktiiviset istunnot
+administer	guacamole	fi	Hallinnoi
+broadcast address for wol package	guacamole	fi	WoL-paketin lähetysosoite
+color depth	guacamole	fi	Värisyvyys
+connection	guacamole	fi	Yhteys
+connection deleted.	guacamole	fi	Yhteys poistettu.
+connection not found!	guacamole	fi	Yhteyttä ei löydy!
 guacamole	common	fi	Guacamole

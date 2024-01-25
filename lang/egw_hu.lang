@@ -1,1 +1,11 @@
+%1 connection(s) deleted.	guacamole	hu	%1 kapcsolat(ok) törölve.
+256 colors (8 bit)	guacamole	hu	256 szín (8 bit)
+active sessions	admin	hu	Aktív munkamenetek
+administer	guacamole	hu	Administer
+broadcast address for wol package	guacamole	hu	A WoL csomag sugárzási címe
+color depth	guacamole	hu	Színmélység
+connection	guacamole	hu	Kapcsolat
+connection deleted.	guacamole	hu	Kapcsolat törölve.
+connection not found!	guacamole	hu	Kapcsolat nem található!
 guacamole	common	hu	Guacamole
+wake-on-lan (wol)	guacamole	hu	Wake-on-LAN (WoL)

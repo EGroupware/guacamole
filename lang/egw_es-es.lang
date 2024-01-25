@@ -10,28 +10,36 @@ connection not found!	guacamole	es-es	¡Conexión no encontrada!
 connection saved.	guacamole	es-es	Conexión guardada.
 connections	admin	es-es	Conexiones
 dansk (qwerty)	guacamole	es-es	Danés (Qwerty)
+display update (rdp 8.1+)	guacamole	es-es	Mostrar actualización (RDP 8.1+)
 english (gb) (qwerty)	guacamole	es-es	Inglés (GB) (Qwerty)
 english (us) (qwerty)	guacamole	es-es	Inglés (US) (Qwerty)
 error deleting connection!	guacamole	es-es	¡Error al suprimir la conexión!
 error storing connection!	guacamole	es-es	¡Error al guardar la conexión!
+font smoothing	guacamole	es-es	Suavizado de fuentes
 french (azerty)	guacamole	es-es	Francés (Azerty)
 german (qwertz)	guacamole	es-es	Alemán (Qwerty)
 guacamole	common	es-es	Guacamole
 high color (16 bit)	guacamole	es-es	Color alto (16 bits)
 highest color (32 bit)	guacamole	es-es	Color más alto (32 bits)
 home	guacamole	es-es	Inicio
+host boot wait time (seconds)	guacamole	es-es	Tiempo de espera de arranque del host (segundos)
 hostname	guacamole	es-es	Nombre del servidor
 ignore certificate	guacamole	es-es	Ignorar certificado
 italian (qwerty)	guacamole	es-es	Italiano (Qwerty)
 japanese (qwerty)	guacamole	es-es	Japonés (Qwerty)
 keyboard layout	guacamole	es-es	Diseño del teclado
+kubernetes	guacamole	es-es	Kubernetes
 mac address of remote host	guacamole	es-es	Dirección MAC del servidor remoto
+members of admins group have full permissions for all connections.	guacamole	es-es	Los miembros del grupo Admins tienen permisos completos para todas las conexiones.
 permissions	guacamole	es-es	Permisos
 port	guacamole	es-es	Puerto
 portuguese (br) (qwerty)	guacamole	es-es	Portugués (BR) (Qwerty)
 protocol	guacamole	es-es	Protocolo
-reconnect	guacamole	es-es	reconectar
+rdp	guacamole	es-es	RDP
+rdp settings	guacamole	es-es	Configuración RDP
+reconnect	guacamole	es-es	Reconectar
 resize method	guacamole	es-es	Método para redimensionar
+send wol package	guacamole	es-es	Enviar paquete WoL
 spanish (qwerty)	guacamole	es-es	Español (Qwerty)
 ssh	guacamole	es-es	SSH
 swedish (qwerty)	guacamole	es-es	Sueco (Qwerty)

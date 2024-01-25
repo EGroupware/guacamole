@@ -10,7 +10,7 @@ connection not found!	guacamole	en	Connection not found!
 connection saved.	guacamole	en	Connection saved.
 connections	admin	en	Connections
 dansk (qwerty)	guacamole	en	Dansk (Qwerty)
-display update (rdp 8.1+)	guacamole	en	display update (RDP 8.1+)
+display update (rdp 8.1+)	guacamole	en	Display update (RDP 8.1+)
 english (gb) (qwerty)	guacamole	en	English (GB) (Qwerty)
 english (us) (qwerty)	guacamole	en	English (US) (Qwerty)
 error deleting connection!	guacamole	en	Error deleting connection!
@@ -37,7 +37,7 @@ portuguese (br) (qwerty)	guacamole	en	Portuguese (BR) (Qwerty)
 protocol	guacamole	en	Protocol
 rdp	guacamole	en	RDP
 rdp settings	guacamole	en	RDP settings
-reconnect	guacamole	en	reconnect
+reconnect	guacamole	en	Reconnect
 resize method	guacamole	en	Resize method
 send wol package	guacamole	en	Send WoL package
 spanish (qwerty)	guacamole	en	Spanish (Qwerty)

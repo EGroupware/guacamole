@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	el	%1 σύνδεση(ες) διαγράφηκαν.
+256 colors (8 bit)	guacamole	el	256 χρώματα (8 bit)
+active sessions	admin	el	Ενεργές συνεδρίες
+administer	guacamole	el	Διαχείριση
+broadcast address for wol package	guacamole	el	Διεύθυνση εκπομπής για το πακέτο WoL
+color depth	guacamole	el	Βάθος χρώματος
+connection	guacamole	el	Σύνδεση
+connection deleted.	guacamole	el	Διαγραφή σύνδεσης.
+connection not found!	guacamole	el	Η σύνδεση δεν βρέθηκε!
 guacamole	common	el	Guacamole

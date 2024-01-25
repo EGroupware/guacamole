@@ -1,1 +1,11 @@
+%1 connection(s) deleted.	guacamole	sv	%1 anslutning(ar) borttagna.
+256 colors (8 bit)	guacamole	sv	256 färger (8 bitar)
+active sessions	admin	sv	Aktiva sessioner
+administer	guacamole	sv	Administrera
+broadcast address for wol package	guacamole	sv	Sändningsadress för WoL-paket
+color depth	guacamole	sv	Färgdjup
+connection	guacamole	sv	Anslutning
+connection deleted.	guacamole	sv	Anslutning borttagen.
+connection not found!	guacamole	sv	Anslutningen hittades inte!
 guacamole	common	sv	Guacamole
+wake-on-lan (wol)	guacamole	sv	Wake-on-LAN (WoL)

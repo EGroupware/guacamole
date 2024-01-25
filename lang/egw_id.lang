@@ -1,1 +1,10 @@
+%1 connection(s) deleted.	guacamole	id	%1 koneksi dihapus.
+256 colors (8 bit)	guacamole	id	256 Warna (8 bit)
+active sessions	admin	id	Sesi Aktif
+administer	guacamole	id	Mengelola
+broadcast address for wol package	guacamole	id	Alamat siaran untuk paket WoL
+color depth	guacamole	id	Kedalaman warna
+connection	guacamole	id	Koneksi
+connection deleted.	guacamole	id	Koneksi dihapus.
+connection not found!	guacamole	id	Koneksi tidak ditemukan!
 guacamole	common	id	Guacamole
