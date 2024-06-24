@@ -19,3 +19,36 @@ font smoothing	guacamole	it	Attenuazione dei caratteri
 french (azerty)	guacamole	it	French (Azerty)
 german (qwertz)	guacamole	it	German (Qwertz)
 guacamole	common	it	Guacamole
+high color (16 bit)	guacamole	it	Colore elevato (16 bit)
+highest color (32 bit)	guacamole	it	Colore massimo (32 bit)
+home	guacamole	it	Casa
+host boot wait time (seconds)	guacamole	it	Tempo di attesa per l'avvio dell'host (secondi)
+hostname	guacamole	it	Nome host
+ignore certificate	guacamole	it	Ignorare il certificato
+italian (qwerty)	guacamole	it	Italiano (Qwerty)
+japanese (qwerty)	guacamole	it	Giapponese (Qwerty)
+keyboard layout	guacamole	it	Layout della tastiera
+kubernetes	guacamole	it	Kubernetes
+mac address of remote host	guacamole	it	Indirizzo MAC dell'host remoto
+members of admins group have full permissions for all connections.	guacamole	it	I membri del gruppo Admins hanno tutte le autorizzazioni per tutte le connessioni.
+permissions	guacamole	it	Autorizzazioni
+port	guacamole	it	Porto
+portuguese (br) (qwerty)	guacamole	it	Portoghese (BR) (Qwerty)
+protocol	guacamole	it	Protocollo
+rdp	guacamole	it	RDP
+rdp settings	guacamole	it	Impostazioni RDP
+reconnect	guacamole	it	Ricollegarsi
+resize method	guacamole	it	Metodo di ridimensionamento
+send wol package	guacamole	it	Inviare il pacchetto WoL
+spanish (qwerty)	guacamole	it	Spagnolo (Qwerty)
+ssh	guacamole	it	SSH
+swedish (qwerty)	guacamole	it	Svedese (Qwerty)
+swiss french (qwertz)	guacamole	it	Svizzero francese (Qwertz)
+swiss german (qwertz)	guacamole	it	Svizzero tedesco (Qwertz)
+telnet	guacamole	it	Telnet
+timezone	guacamole	it	Fuso orario
+true color (24 bit)	guacamole	it	True Color (24 bit)
+turkish (qwerty)	guacamole	it	Turco (Qwerty)
+usage	guacamole	it	Utilizzo
+vnc	guacamole	it	VNC
+wake-on-lan (wol)	guacamole	it	Wake-on-LAN (WoL)
