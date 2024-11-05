@@ -7,4 +7,13 @@ color depth	guacamole	fi	Värisyvyys
 connection	guacamole	fi	Yhteys
 connection deleted.	guacamole	fi	Yhteys poistettu.
 connection not found!	guacamole	fi	Yhteyttä ei löydy!
+connection saved.	guacamole	fi	Yhteys pelastettu.
+connections	admin	fi	Yhteydet
 guacamole	common	fi	Guacamole
+kubernetes	guacamole	fi	Kubernetes
+rdp	guacamole	fi	RDP
+rdp settings	guacamole	fi	RDP-asetukset
+ssh	guacamole	fi	SSH
+telnet	guacamole	fi	Telnet
+vnc	guacamole	fi	VNC
+wake-on-lan (wol)	guacamole	fi	Wake-on-LAN (WoL)

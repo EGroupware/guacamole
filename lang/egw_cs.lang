@@ -7,4 +7,13 @@ color depth	guacamole	cs	Barevná hloubka
 connection	guacamole	cs	Připojení
 connection deleted.	guacamole	cs	Připojení odstraněno.
 connection not found!	guacamole	cs	Připojení nebylo nalezeno!
+connection saved.	guacamole	cs	Připojení uloženo.
+connections	admin	cs	Připojení
 guacamole	common	cs	Guacamole
+kubernetes	guacamole	cs	Kubernetes
+rdp	guacamole	cs	RDP
+rdp settings	guacamole	cs	Nastavení RDP
+ssh	guacamole	cs	SSH
+telnet	guacamole	cs	Telnet
+vnc	guacamole	cs	VNC
+wake-on-lan (wol)	guacamole	cs	Wake-on-LAN (WoL)

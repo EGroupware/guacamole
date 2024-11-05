@@ -7,4 +7,14 @@ color depth	guacamole	pt-br	Profundidade da cor
 connection	guacamole	pt-br	Conexão
 connection deleted.	guacamole	pt-br	Conexão excluída.
 connection not found!	guacamole	pt-br	Conexão não encontrada!
+connection saved.	guacamole	pt-br	Conexão salva.
+connections	admin	pt-br	Conexões
 guacamole	common	pt-br	Guacamole
+kubernetes	guacamole	pt-br	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	pt-br	Os membros do grupo Admins têm permissões totais para todas as conexões.
+rdp	guacamole	pt-br	RDP
+rdp settings	guacamole	pt-br	Configurações de RDP
+ssh	guacamole	pt-br	SSH
+telnet	guacamole	pt-br	Telnet
+vnc	guacamole	pt-br	VNC
+wake-on-lan (wol)	guacamole	pt-br	Wake-on-LAN (WoL)

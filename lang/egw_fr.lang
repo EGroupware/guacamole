@@ -1,4 +1,3 @@
-#	guacamole	fr	#
 %1 connection(s) deleted.	guacamole	fr	%1 connexion(s) supprimée(s).
 256 colors (8 bit)	guacamole	fr	256 Couleurs(8 bit)
 active sessions	admin	fr	Sessions actives
@@ -22,7 +21,6 @@ german (qwertz)	guacamole	fr	German (Qwertz)
 guacamole	common	fr	Guacamole
 high color (16 bit)	guacamole	fr	65536 couleurs (16 bits)
 highest color (32 bit)	guacamole	fr	Qualité optimale (32 bits)
-history	admin	fr	Historique
 home	guacamole	fr	Accueil
 host boot wait time (seconds)	guacamole	fr	Temps de démarrage de l'hôte (secondes)
 hostname	guacamole	fr	Nom d'hôte

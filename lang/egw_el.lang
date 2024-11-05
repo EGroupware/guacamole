@@ -7,4 +7,13 @@ color depth	guacamole	el	Βάθος χρώματος
 connection	guacamole	el	Σύνδεση
 connection deleted.	guacamole	el	Διαγραφή σύνδεσης.
 connection not found!	guacamole	el	Η σύνδεση δεν βρέθηκε!
+connection saved.	guacamole	el	Σύνδεση αποθηκευμένη.
+connections	admin	el	Συνδέσεις
 guacamole	common	el	Guacamole
+kubernetes	guacamole	el	Kubernetes
+rdp	guacamole	el	RDP
+rdp settings	guacamole	el	Ρυθμίσεις RDP
+ssh	guacamole	el	SSH
+telnet	guacamole	el	Telnet
+vnc	guacamole	el	VNC
+wake-on-lan (wol)	guacamole	el	Wake-on-LAN (WoL)

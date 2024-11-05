@@ -7,3 +7,14 @@ color depth	guacamole	no	Fargedybde
 connection	guacamole	no	Tilkobling
 connection deleted.	guacamole	no	Tilkobling slettet.
 connection not found!	guacamole	no	Tilkobling ikke funnet!
+connection saved.	guacamole	no	Forbindelse lagret.
+connections	admin	no	Tilkoblinger
+guacamole	common	no	Guacamole
+kubernetes	guacamole	no	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	no	Medlemmer av Admins-gruppen har fulle rettigheter for alle tilkoblinger.
+rdp	guacamole	no	RDP
+rdp settings	guacamole	no	RDP-innstillinger
+ssh	guacamole	no	SSH
+telnet	guacamole	no	Telnet
+vnc	guacamole	no	VNC
+wake-on-lan (wol)	guacamole	no	Wake-on-LAN (WoL)

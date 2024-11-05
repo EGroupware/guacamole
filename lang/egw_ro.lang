@@ -7,4 +7,14 @@ color depth	guacamole	ro	Adâncimea culorilor
 connection	guacamole	ro	Conexiune
 connection deleted.	guacamole	ro	Conexiune ștearsă.
 connection not found!	guacamole	ro	Conexiunea nu a fost găsită!
+connection saved.	guacamole	ro	Conexiune salvată.
+connections	admin	ro	Conexiuni
 guacamole	common	ro	Guacamole
+kubernetes	guacamole	ro	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	ro	Membrii grupului Admins au permisiuni complete pentru toate conexiunile.
+rdp	guacamole	ro	RDP
+rdp settings	guacamole	ro	Setări RDP
+ssh	guacamole	ro	SSH
+telnet	guacamole	ro	Telnet
+vnc	guacamole	ro	VNC
+wake-on-lan (wol)	guacamole	ro	Wake-on-LAN (WoL)

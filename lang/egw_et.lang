@@ -7,4 +7,13 @@ color depth	guacamole	et	Värvisügavus
 connection	guacamole	et	Ühendus
 connection deleted.	guacamole	et	Ühendus kustutatud.
 connection not found!	guacamole	et	Ühendust ei leitud!
+connection saved.	guacamole	et	Ühendus salvestatud.
+connections	admin	et	Ühendused
 guacamole	common	et	Guacamole
+kubernetes	guacamole	et	Kubernetes
+rdp	guacamole	et	RDP
+rdp settings	guacamole	et	RDP seaded
+ssh	guacamole	et	SSH
+telnet	guacamole	et	Telnet
+vnc	guacamole	et	VNC
+wake-on-lan (wol)	guacamole	et	Wake-on-LAN (WoL)

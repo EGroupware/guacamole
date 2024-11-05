@@ -7,4 +7,14 @@ color depth	guacamole	nl	Kleurdiepte
 connection	guacamole	nl	Verbinding
 connection deleted.	guacamole	nl	Verbinding verwijderd.
 connection not found!	guacamole	nl	Verbinding niet gevonden!
+connection saved.	guacamole	nl	Verbinding opgeslagen.
+connections	admin	nl	Verbindingen
 guacamole	common	nl	Guacamole
+kubernetes	guacamole	nl	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	nl	Leden van de groep Admins hebben volledige rechten voor alle verbindingen.
+rdp	guacamole	nl	RDP
+rdp settings	guacamole	nl	RDP instellingen
+ssh	guacamole	nl	SSH
+telnet	guacamole	nl	Telnet
+vnc	guacamole	nl	VNC
+wake-on-lan (wol)	guacamole	nl	Wake-on-LAN (WoL)

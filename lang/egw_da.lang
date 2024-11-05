@@ -7,4 +7,13 @@ color depth	guacamole	da	Farvedybde
 connection	guacamole	da	Forbindelse
 connection deleted.	guacamole	da	Forbindelse slettet.
 connection not found!	guacamole	da	Forbindelse ikke fundet!
+connection saved.	guacamole	da	Forbindelse gemt.
+connections	admin	da	Forbindelser
 guacamole	common	da	Guacamole
+kubernetes	guacamole	da	Kubernetes
+rdp	guacamole	da	RDP
+rdp settings	guacamole	da	RDP-indstillinger
+ssh	guacamole	da	SSH
+telnet	guacamole	da	Telnet
+vnc	guacamole	da	VNC
+wake-on-lan (wol)	guacamole	da	Wake-on-LAN (WoL)

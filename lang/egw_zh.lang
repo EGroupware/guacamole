@@ -7,4 +7,13 @@ color depth	guacamole	zh	颜色深度
 connection	guacamole	zh	连接
 connection deleted.	guacamole	zh	连接已删除。
 connection not found!	guacamole	zh	未找到连接！
+connection saved.	guacamole	zh	连接已保存。
+connections	admin	zh	连接
 guacamole	common	zh	Guacamole
+kubernetes	guacamole	zh	库伯网络
+rdp	guacamole	zh	RDP
+rdp settings	guacamole	zh	RDP 设置
+ssh	guacamole	zh	SSH
+telnet	guacamole	zh	Telnet
+vnc	guacamole	zh	VNC
+wake-on-lan (wol)	guacamole	zh	网络唤醒（WoL）

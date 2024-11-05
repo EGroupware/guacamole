@@ -7,4 +7,14 @@ color depth	guacamole	lt	Spalvų gylis
 connection	guacamole	lt	Ryšys
 connection deleted.	guacamole	lt	Ryšys pašalintas.
 connection not found!	guacamole	lt	Ryšys nerastas!
+connection saved.	guacamole	lt	Išsaugotas ryšys.
+connections	admin	lt	Ryšiai
 guacamole	common	lt	Guacamole
+kubernetes	guacamole	lt	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	lt	Grupės „Admins“ nariai turi visas visų prisijungimų teises.
+rdp	guacamole	lt	RDP
+rdp settings	guacamole	lt	RDP nustatymai
+ssh	guacamole	lt	SSH
+telnet	guacamole	lt	Telnet
+vnc	guacamole	lt	VNC
+wake-on-lan (wol)	guacamole	lt	Wake-on-LAN (WoL)

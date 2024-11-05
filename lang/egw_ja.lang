@@ -7,4 +7,13 @@ color depth	guacamole	ja	色の深さ
 connection	guacamole	ja	接続
 connection deleted.	guacamole	ja	接続が削除されました。
 connection not found!	guacamole	ja	接続が見つかりません！
+connection saved.	guacamole	ja	コネクションが保存されました。
+connections	admin	ja	接続
 guacamole	common	ja	Guacamole
+kubernetes	guacamole	ja	Kubernetes
+rdp	guacamole	ja	RDP
+rdp settings	guacamole	ja	RDP設定
+ssh	guacamole	ja	SSH
+telnet	guacamole	ja	Telnet
+vnc	guacamole	ja	VNC
+wake-on-lan (wol)	guacamole	ja	ウェイクオンLAN（WoL）

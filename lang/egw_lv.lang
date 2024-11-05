@@ -7,4 +7,13 @@ color depth	guacamole	lv	Krāsu dziļums
 connection	guacamole	lv	Savienojums
 connection deleted.	guacamole	lv	Savienojums dzēsts.
 connection not found!	guacamole	lv	Savienojums nav atrasts!
+connection saved.	guacamole	lv	Savienojums saglabāts.
+connections	admin	lv	Savienojumi
 guacamole	common	lv	Guacamole
+kubernetes	guacamole	lv	Kubernetes
+rdp	guacamole	lv	RDP
+rdp settings	guacamole	lv	RDP iestatījumi
+ssh	guacamole	lv	SSH
+telnet	guacamole	lv	Telnet
+vnc	guacamole	lv	VNC
+wake-on-lan (wol)	guacamole	lv	Wake-on-LAN (WoL)

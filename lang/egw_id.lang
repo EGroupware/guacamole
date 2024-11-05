@@ -7,4 +7,13 @@ color depth	guacamole	id	Kedalaman warna
 connection	guacamole	id	Koneksi
 connection deleted.	guacamole	id	Koneksi dihapus.
 connection not found!	guacamole	id	Koneksi tidak ditemukan!
+connection saved.	guacamole	id	Koneksi tersimpan.
+connections	admin	id	Koneksi
 guacamole	common	id	Guacamole
+kubernetes	guacamole	id	Kubernetes
+rdp	guacamole	id	RDP
+rdp settings	guacamole	id	Pengaturan RDP
+ssh	guacamole	id	SSH
+telnet	guacamole	id	Telnet
+vnc	guacamole	id	VNC
+wake-on-lan (wol)	guacamole	id	Wake-on-LAN (WoL)

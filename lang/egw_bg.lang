@@ -7,4 +7,13 @@ color depth	guacamole	bg	Дълбочина на цветовете
 connection	guacamole	bg	Връзка
 connection deleted.	guacamole	bg	Изтрита връзка.
 connection not found!	guacamole	bg	Връзката не е намерена!
+connection saved.	guacamole	bg	Запазена връзка.
+connections	admin	bg	Връзки
 guacamole	common	bg	Guacamole
+kubernetes	guacamole	bg	Kubernetes
+rdp	guacamole	bg	RDP
+rdp settings	guacamole	bg	Настройки на RDP
+ssh	guacamole	bg	SSH
+telnet	guacamole	bg	Telnet
+vnc	guacamole	bg	VNC
+wake-on-lan (wol)	guacamole	bg	Wake-on-LAN (WoL)

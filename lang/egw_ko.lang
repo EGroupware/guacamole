@@ -7,3 +7,13 @@ color depth	guacamole	ko	색 농도
 connection	guacamole	ko	연결
 connection deleted.	guacamole	ko	연결이 삭제되었습니다.
 connection not found!	guacamole	ko	연결을 찾을 수 없습니다!
+connection saved.	guacamole	ko	연결이 저장되었습니다.
+connections	admin	ko	연결
+guacamole	common	ko	Guacamole
+kubernetes	guacamole	ko	Kubernetes
+rdp	guacamole	ko	RDP
+rdp settings	guacamole	ko	RDP 설정
+ssh	guacamole	ko	SSH
+telnet	guacamole	ko	Telnet
+vnc	guacamole	ko	VNC
+wake-on-lan (wol)	guacamole	ko	WoL(Wake-on-LAN)
