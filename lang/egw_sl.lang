@@ -7,5 +7,14 @@ color depth	guacamole	sl	Barvna globina
 connection	guacamole	sl	Povezava
 connection deleted.	guacamole	sl	Povezava izbrisana.
 connection not found!	guacamole	sl	Povezava ni bila najdena!
+connection saved.	guacamole	sl	Prihranjena povezava.
+connections	admin	sl	Povezave
 guacamole	common	sl	Guacamole
+kubernetes	guacamole	sl	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	sl	Člani skupine Admins imajo polna dovoljenja za vse povezave.
+rdp	guacamole	sl	RDP
+rdp settings	guacamole	sl	Nastavitve RDP
+ssh	guacamole	sl	SSH
+telnet	guacamole	sl	Telnet
+vnc	guacamole	sl	VNC
 wake-on-lan (wol)	guacamole	sl	Bujenje v omrežju LAN (WoL)

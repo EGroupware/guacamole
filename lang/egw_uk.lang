@@ -7,5 +7,14 @@ color depth	guacamole	uk	Глибина кольору
 connection	guacamole	uk	З'єднання
 connection deleted.	guacamole	uk	З'єднання видалено.
 connection not found!	guacamole	uk	З'єднання не знайдено!
+connection saved.	guacamole	uk	З'єднання збережено.
+connections	admin	uk	Підключення
 guacamole	common	uk	Guacamole
+kubernetes	guacamole	uk	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	uk	Члени групи Admins мають повні дозволи на всі з'єднання.
+rdp	guacamole	uk	RDP
+rdp settings	guacamole	uk	Налаштування RDP
+ssh	guacamole	uk	SSH
+telnet	guacamole	uk	Telnet
+vnc	guacamole	uk	VNC
 wake-on-lan (wol)	guacamole	uk	Wake-on-LAN (WoL)

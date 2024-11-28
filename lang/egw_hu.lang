@@ -7,5 +7,14 @@ color depth	guacamole	hu	Színmélység
 connection	guacamole	hu	Kapcsolat
 connection deleted.	guacamole	hu	Kapcsolat törölve.
 connection not found!	guacamole	hu	Kapcsolat nem található!
+connection saved.	guacamole	hu	Kapcsolat megmentve.
+connections	admin	hu	Kapcsolatok
 guacamole	common	hu	Guacamole
+kubernetes	guacamole	hu	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	hu	Az Admins csoport tagjai teljes jogosultsággal rendelkeznek minden kapcsolathoz.
+rdp	guacamole	hu	RDP
+rdp settings	guacamole	hu	RDP beállítások
+ssh	guacamole	hu	SSH
+telnet	guacamole	hu	Telnet
+vnc	guacamole	hu	VNC
 wake-on-lan (wol)	guacamole	hu	Wake-on-LAN (WoL)

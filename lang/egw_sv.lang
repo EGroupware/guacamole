@@ -7,5 +7,14 @@ color depth	guacamole	sv	Färgdjup
 connection	guacamole	sv	Anslutning
 connection deleted.	guacamole	sv	Anslutning borttagen.
 connection not found!	guacamole	sv	Anslutningen hittades inte!
+connection saved.	guacamole	sv	Anslutning sparad.
+connections	admin	sv	Anslutningar
 guacamole	common	sv	Guacamole
+kubernetes	guacamole	sv	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	sv	Medlemmar i gruppen Admins har fullständiga behörigheter för alla anslutningar.
+rdp	guacamole	sv	RDP
+rdp settings	guacamole	sv	RDP-inställningar
+ssh	guacamole	sv	SSH
+telnet	guacamole	sv	Telnet
+vnc	guacamole	sv	VNC
 wake-on-lan (wol)	guacamole	sv	Wake-on-LAN (WoL)

@@ -7,5 +7,14 @@ color depth	guacamole	tr	Renk derinliği
 connection	guacamole	tr	Bağlantı
 connection deleted.	guacamole	tr	Bağlantı silindi.
 connection not found!	guacamole	tr	Bağlantı bulunamadı!
+connection saved.	guacamole	tr	Bağlantı kaydedildi.
+connections	admin	tr	Bağlantılar
 guacamole	common	tr	Guacamole
+kubernetes	guacamole	tr	Kubernetes
+members of admins group have full permissions for all connections.	guacamole	tr	Admins grubunun üyeleri tüm bağlantılar için tam izinlere sahiptir.
+rdp	guacamole	tr	RDP
+rdp settings	guacamole	tr	RDP ayarları
+ssh	guacamole	tr	SSH
+telnet	guacamole	tr	Telnet
+vnc	guacamole	tr	VNC
 wake-on-lan (wol)	guacamole	tr	Wake-on-LAN (WoL)
