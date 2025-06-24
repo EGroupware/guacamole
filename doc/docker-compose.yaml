@@ -27,6 +27,8 @@ services:
       OPENID_ISSUER: https://example.org
       OPENID_CLIENT_ID: guacamole
       OPENID_REDIRECT_URI: https://example.org/guacamole/
+      # required since 1.6.0, otherwise mysql would be prefered as before openid in the alphabet
+      EXTENSION_PRIORITY: openid
     image: guacamole/guacamole
     links:
       - guacd
