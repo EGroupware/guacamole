@@ -46,7 +46,7 @@ $GLOBALS['egw_setup']->add_acl('guacamole', 'run', $defaultgroup);
 
 // give Admins group rights to use AND manage Guacamole connections
 $adminsgroup = $GLOBALS['egw_setup']->add_account('Admins', 'Admins', 'Group', false, false);
-foreach(['run', 'READ', 'UPDATE', 'DELETE', 'ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'] as $perms)
+foreach(['run', 'READ', 'UPDATE', 'DELETE', 'AUDIT', 'ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'] as $perms)
 {
 	$GLOBALS['egw_setup']->add_acl('guacamole', $perms, $adminsgroup);
 }

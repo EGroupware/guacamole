@@ -119,7 +119,7 @@
 					<passwd id="#password" class="et2_fullWidth"/>
 				</row>
 				<row>
-					<tabbox id="tabs" span="all" tab_height="180">
+					<tabbox id="tabs" span="all" tab_height="230">
 						<tabs>
 							<tab id="guacamole.edit.rdp" label="RDP settings"/>
 							<tab id="guacamole.edit.perms" label="Permissions"/>
@@ -145,4 +145,3 @@
 		</grid>
 	</template>
 </overlay>
-

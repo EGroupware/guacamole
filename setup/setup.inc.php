@@ -13,7 +13,7 @@
 use EGroupware\Guacamole;
 
 $setup_info['guacamole']['name']      = 'guacamole';
-$setup_info['guacamole']['version']   = '0.2';
+$setup_info['guacamole']['version']   = '1.6';
 $setup_info['guacamole']['app_order'] = 5;
 $setup_info['guacamole']['enable']    = 1;
 $setup_info['guacamole']['tables']    = array(

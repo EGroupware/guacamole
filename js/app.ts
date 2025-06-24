@@ -11,7 +11,10 @@
 import { EgwApp } from '../../api/js/jsapi/egw_app';
 import type {etemplate2} from "../../api/js/etemplate/etemplate2";
 import type {Et2Iframe} from "../../api/js/etemplate/Et2Iframe/Et2Iframe";
-import {egw, framework, app} from "../../api/js/jsapi/egw_global";
+import {egw, app} from "../../api/js/jsapi/egw_global";
+declare global {
+    var framework;
+}
 
 
 class GuacamoleApp extends EgwApp
@@ -99,7 +102,7 @@ class GuacamoleApp extends EgwApp
             return;
         }
         // Ensure iframe is focused
-        let iframe = <Et2Iframe><any>this.et2.getWidgetById('guacamole');
+        let iframe = <Et2Iframe><any>this.et2?.getWidgetById('guacamole');
         if (iframe) iframe.getDOMNode().focus();
     }
 }
