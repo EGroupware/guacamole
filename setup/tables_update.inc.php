@@ -36,12 +36,12 @@ function guacamole_upgrade0_2()
 		// update guacamole_system_permission view
 		$db->query("CREATE OR REPLACE VIEW guacamole_system_permission AS
 (SELECT ABS(acl_account) AS entity_id, CASE WHEN acl_location IN ('AUDIT','ADMINISTER') THEN acl_location ELSE CONCAT('CREATE_', acl_location) END AS permission
-FROM egroupware.egw_acl
+FROM egw_acl
 WHERE acl_appname='guacamole' AND acl_location IN ('AUDIT','ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE'))
 UNION
 (SELECT members.acl_account AS entity_id, CASE WHEN egw_acl.acl_location IN ('AUDIT','ADMINISTER') THEN egw_acl.acl_location ELSE CONCAT('CREATE_', egw_acl.acl_location) END AS permission
-FROM egroupware.egw_acl
-JOIN egroupware.egw_acl members ON members.acl_appname='phpgw_group' AND CAST(members.acl_location AS SIGNED)=egw_acl.acl_account
+FROM egw_acl
+JOIN egw_acl members ON members.acl_appname='phpgw_group' AND CAST(members.acl_location AS SIGNED)=egw_acl.acl_account
 WHERE egw_acl.acl_appname='guacamole' AND egw_acl.acl_location IN ('AUDIT','ADMINISTER','CONNECTION','CONNECTION_GROUP','SHARING_PROFILE') AND egw_acl.acl_account < 0);
 ");
 		// update guacamole_user view to query timezone from (forced, user or default preferences, in that order)
@@ -57,8 +57,8 @@ SELECT account_id AS user_id,account_id AS entity_id,
     WHERE preference_app='common' AND preference_owner IN (-1/*forced*/,egw_accounts.account_id,-2/*default*/) AND JSON_VALUE(preference_value,'$.tz') IS NOT NULL
     ORDER BY CASE preference_owner WHEN -1 THEN 3 WHEN egw_accounts.account_id THEN 2 ELSE 1 END DESC LIMIT 1) AS timezone,
     n_fn AS full_name, contact_email AS email_address, org_name AS organization, contact_role AS organizational_role
-FROM egroupware.egw_accounts
-JOIN egroupware.egw_addressbook USING(account_id)
+FROM egw_accounts
+JOIN egw_addressbook USING(account_id)
 WHERE account_type='u' AND account_lid != 'anonymous'", __LINE__, __FILE__);
 	}
 	catch (Api\Exception\Db $e) {
