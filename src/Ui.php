@@ -92,9 +92,9 @@ class Ui
 	/**
 	 * Edit a host
 	 *
-	 * @param array $content =null
+	 * @param ?array $content =null
 	 */
-	public function edit(array $content=null)
+	public function edit(?array $content=null)
 	{
 		if (!is_array($content))
 		{
@@ -200,9 +200,9 @@ class Ui
 	/**
 	 * List connections
 	 *
-	 * @param array $content =null
+	 * @param ?array $content =null
 	 */
-	public function connections(array $content=null)
+	public function connections(?array $content=null)
 	{
 		if (!is_array($content) || empty($content['nm']))
 		{
