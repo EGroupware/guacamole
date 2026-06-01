@@ -95,7 +95,10 @@ class Bo extends Api\Storage
 
 		foreach(self::$connection_perms as $permision)
 		{
-			if (($deleted = self::getEntityId(array_diff((array)$existing[$permision], (array)$perms[$permision]))))
+			// egroupware uses negative account_id for groups internally, but account_id in DB is always positive
+			$abs_perms = array_map('abs', (array)$perms[$permision]);
+
+			if (($deleted = self::getEntityId(array_diff((array)$existing[$permision], $abs_perms))) !== False)
 			{
 				$this->db->delete(self::PERMS_TABLE, [
 					'connection_id' => $conection_id,
@@ -103,7 +106,7 @@ class Bo extends Api\Storage
 					'entity_id' => $deleted,
 				], __LINE__, __FILE__, self::APP);
 			}
-			if (($added = self::getEntityId(array_diff((array)$perms[$permision], (array)$existing[$permision]))))
+			if (($added = self::getEntityId(array_diff($abs_perms, (array)$existing[$permision]))))
 			{
 				foreach($added as $entity_id)
 				{
