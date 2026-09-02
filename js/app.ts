@@ -11,10 +11,8 @@
 import { EgwApp } from '../../api/js/jsapi/egw_app';
 import type {etemplate2} from "../../api/js/etemplate/etemplate2";
 import type {Et2Iframe} from "../../api/js/etemplate/Et2Iframe/Et2Iframe";
-import {egw, app} from "../../api/js/jsapi/egw_global";
-declare global {
-    var framework;
-}
+// egw/app/framework are ambient globals (declare global {} in egw_global.d.ts, unconditionally
+// included via tsconfig's "**/*.d.ts") - no import/local re-declaration needed or possible.
 
 
 class GuacamoleApp extends EgwApp
