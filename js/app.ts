@@ -100,8 +100,12 @@ class GuacamoleApp extends EgwApp
             return;
         }
         // Ensure iframe is focused
+        // Et2Iframe keeps its actual <iframe> inside a shadow root - getDOMNode() (inherited,
+        // unoverridden) returns the <et2-iframe> host element instead, which .focus()'d
+        // does not move focus into the iframe's content. __getIframeNode() is Et2Iframe's own
+        // accessor for the real node.
         let iframe = <Et2Iframe><any>this.et2?.getWidgetById('guacamole');
-        if (iframe) iframe.getDOMNode().focus();
+        if (iframe) (iframe.__getIframeNode() || iframe.getDOMNode()).focus();
     }
 }
 
