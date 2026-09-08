@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
-	<template id="guacamole.connections.rows" template="" lang="" group="0" version="19.1.001">
+	<et2-template  id="guacamole.connections.rows" template="" lang="" group="0" version="19.1.001">
 		<grid width="100%">
 			<columns>
 				<column width="15"/>
@@ -12,25 +12,23 @@
 			<rows>
 				<row class="th">
 					<nextmatch-sortheader label="#" id="connection_id"/>
-					<nextmatch-header label="Name" id="connection_name"/>
-					<nextmatch-filterheader empty_label="Protocol" id="protocol"/>
+					<et2-nextmatch-header  label="Name" id="connection_name"></et2-nextmatch-header>
+					<et2-nextmatch-header  id="protocol" emptyLabel="Protocol"></et2-nextmatch-header>
 					<nextmatch-sortheader label="Hostname" id="#hostname"/>
 				</row>
 				<row class="$row_cont[cat_id] $row_cont[class]">
-					<description id="${row}[connection_id]"/>
-					<description id="${row}[connection_name]"/>
-					<select id="${row}[protocol]" readonly="true"/>
-					<description id="${row}[#hostname]"/>
+					<et2-description  id="${row}[connection_id]"></et2-description>
+					<et2-description  id="${row}[connection_name]"></et2-description>
+					<et2-select  id="${row}[protocol]" readonly="true"></et2-select>
+					<et2-description  id="${row}[#hostname]"></et2-description>
 				</row>
 			</rows>
 		</grid>
-	</template>
-	<template id="guacamole.connections.add" template="" lang="" group="0" version="19.1.001">
-		<buttononly label="Add" id="add"
-			onclick="egw(window).openPopup(egw::link('/index.php','menuaction=guacamole.EGroupware\\Guacamole\\Ui.edit'),'640','480','_blank','admin'); return false;"/>
-	</template>
-	<template id="guacamole.connections" template="" lang="" group="0" version="19.1.001">
+	</et2-template>
+	<et2-template  id="guacamole.connections.add" template="" lang="" group="0" version="19.1.001">
+		<et2-button  label="Add" id="add" onclick="egw(window).openPopup(egw::link('/index.php','menuaction=guacamole.EGroupware\\Guacamole\\Ui.edit'),'640','480','_blank','admin'); return false;" noSubmit="true"></et2-button>
+	</et2-template>
+	<et2-template  id="guacamole.connections" template="" lang="" group="0" version="19.1.001">
 		<nextmatch id="nm" options="guacamole.connections.rows" header_left="guacamole.connections.add"/>
-	</template>
+	</et2-template>
 </overlay>
-

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
-	<template id="guacamole.edit.rdp" template="" lang="" group="0" version="19.1">
+	<et2-template  id="guacamole.edit.rdp" template="" lang="" group="0" version="19.1">
 		<grid width="100%">
 			<columns>
 				<column width="110"/>
@@ -9,32 +9,32 @@
 			</columns>
 			<rows>
 				<row>
-					<description for="#server-layout" value="Keyboard layout"/>
-					<select id="#server-layout"/>
+					<et2-description  for="#server-layout" value="Keyboard layout"></et2-description>
+					<et2-select  id="#server-layout"></et2-select>
 				</row>
 				<row>
-					<description for="#timezone" value="Timezone"/>
-					<select-timezone id="#timezone"/>
+					<et2-description  for="#timezone" value="Timezone"></et2-description>
+					<et2-select-timezone  id="#timezone"></et2-select-timezone>
 				</row>
 				<row>
-					<description for="#color-depth" value="Color depth"/>
-					<select id="#color-depth"/>
+					<et2-description  for="#color-depth" value="Color depth"></et2-description>
+					<et2-select  id="#color-depth"></et2-select>
 				</row>
 				<row valign="top">
-					<description value="Options"/>
-					<vbox>
-						<checkbox label="Font smoothing" id="#enable-font-smoothing" selected_value="true"/>
-						<checkbox label="Ignore certificate" id="#ignore-cert" selected_value="true"/>
-					</vbox>
+					<et2-description  value="Options"></et2-description>
+					<et2-vbox>
+						<et2-checkbox  label="Font smoothing" id="#enable-font-smoothing" selectedValue="true"></et2-checkbox>
+						<et2-checkbox  label="Ignore certificate" id="#ignore-cert" selectedValue="true"></et2-checkbox>
+					</et2-vbox>
 				</row>
 				<row>
-					<description for="#resize-method" value="Resize method"/>
-					<select id="#resize-method"/>
+					<et2-description  for="#resize-method" value="Resize method"></et2-description>
+					<et2-select  id="#resize-method"></et2-select>
 				</row>
 			</rows>
 		</grid>
-	</template>
-	<template id="guacamole.edit.perms" template="" lang="" group="0" version="19.1">
+	</et2-template>
+	<et2-template  id="guacamole.edit.perms" template="" lang="" group="0" version="19.1">
 		<grid id="permissions" width="100%">
 			<columns>
 				<column width="100"/>
@@ -42,28 +42,28 @@
 			</columns>
 			<rows>
 				<row>
-					<description for="READ" value="Usage"/>
-					<taglist-account id="READ" account_type="both" class="et2_fullWidth et2_required"/>
+					<et2-description  for="READ" value="Usage"></et2-description>
+					<et2-select-account  id="READ" class="et2_required" multiple="true" accountType="both"></et2-select-account>
 				</row>
 				<row>
-					<description for="UPDATE" value="Update"/>
-					<taglist-account id="UPDATE" account_type="both" class="et2_fullWidth et2_required"/>
+					<et2-description  for="UPDATE" value="Update"></et2-description>
+					<et2-select-account  id="UPDATE" class="et2_required" multiple="true" accountType="both"></et2-select-account>
 				</row>
 				<row>
-					<description for="DELETE" value="Delete"/>
-					<taglist-account id="DELETE" account_type="both" class="et2_fullWidth et2_required"/>
+					<et2-description  for="DELETE" value="Delete"></et2-description>
+					<et2-select-account  id="DELETE" class="et2_required" multiple="true" accountType="both"></et2-select-account>
 				</row>
 				<row>
-					<description for="ADMINISTER" value="Administer"/>
-					<taglist-account id="ADMINISTER" account_type="both" class="et2_fullWidth et2_required"/>
+					<et2-description  for="ADMINISTER" value="Administer"></et2-description>
+					<et2-select-account  id="ADMINISTER" class="et2_required" multiple="true" accountType="both"></et2-select-account>
 				</row>
 				<row>
-					<description value="Members of Admins group have full permissions for all connections." span="all"/>
+					<et2-description  value="Members of Admins group have full permissions for all connections." span="all"></et2-description>
 				</row>
 			</rows>
 		</grid>
-	</template>
-	<template id="guacamole.edit.wakeonlan" template="" lang="" group="0" version="19.1">
+	</et2-template>
+	<et2-template  id="guacamole.edit.wakeonlan" template="" lang="" group="0" version="19.1">
 		<grid width="100%">
 			<columns>
 				<column width="200"/>
@@ -71,25 +71,25 @@
 			</columns>
 			<rows>
 				<row>
-					<description for="#wol-send-packet" value="Send WoL package"/>
-					<checkbox id="#wol-send-packet" selected_value="true"/>
+					<et2-description  for="#wol-send-packet" value="Send WoL package"></et2-description>
+					<et2-checkbox  id="#wol-send-packet" selectedValue="true"></et2-checkbox>
 				</row>
 				<row>
-					<description for="#wol-broadcast-addr" value="Broadcast address for WoL package"/>
-					<textbox id="#wol-broadcast-addr" size="15" validator="/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})?$/"/>
+					<et2-description  for="#wol-broadcast-addr" value="Broadcast address for WoL package"></et2-description>
+					<et2-textbox  id="#wol-broadcast-addr" validator="/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})?$/"></et2-textbox>
 				</row>
 				<row>
-					<description for="#wol-mac-addr" value="MAC address of remote host"/>
-					<textbox id="#wol-mac-addr" validator="/^(([a-f0-9]{1,2}:?){6})?$/i"/>
+					<et2-description  for="#wol-mac-addr" value="MAC address of remote host"></et2-description>
+					<et2-textbox  id="#wol-mac-addr" validator="/^(([a-f0-9]{1,2}:?){6})?$/i"></et2-textbox>
 				</row>
 				<row>
-					<description for="#wol-wait-time" value="Host boot wait time (seconds)"/>
-					<integer id="#wol-wait-time" min="10" step="10"/>
+					<et2-description  for="#wol-wait-time" value="Host boot wait time (seconds)"></et2-description>
+					<et2-number  id="#wol-wait-time" min="10" step="10" precision="0"></et2-number>
 				</row>
 			</rows>
 		</grid>
-	</template>
-	<template id="guacamole.edit" template="" lang="" group="0" version="19.1">
+	</et2-template>
+	<et2-template  id="guacamole.edit" template="" lang="" group="0" version="19.1">
 		<grid width="100%">
 			<columns>
 				<column width="110"/>
@@ -99,49 +99,48 @@
 			</columns>
 			<rows>
 				<row class="dialogHeader">
-					<description for="connection_name" value="Connection"/>
-					<textbox id="connection_name" tabindex="1" maxlength="128" needed="true" span="all" class="et2_fullWidth"/>
+					<et2-description  for="connection_name" value="Connection"></et2-description>
+					<et2-textbox  id="connection_name" tabindex="1" maxlength="128" span="all" required="true"></et2-textbox>
 				</row>
 				<row>
-					<description for="protocol" value="Protocol"/>
-					<select id="protocol" tabindex="2" needed="true" span="all"/>
+					<et2-description  for="protocol" value="Protocol"></et2-description>
+					<et2-select  id="protocol" tabindex="2" span="all" required="true"></et2-select>
 				</row>
 				<row>
-					<description for="#hostname" value="Hostname"/>
-					<textbox id="#hostname" tabindex="3" maxlength="128" needed="true" class="et2_fullWidth"/>
-					<description for="#port" value="Port"/>
-					<integer id="#port" min="1"/>
+					<et2-description  for="#hostname" value="Hostname"></et2-description>
+					<et2-textbox  id="#hostname" tabindex="3" maxlength="128" required="true"></et2-textbox>
+					<et2-description  for="#port" value="Port"></et2-description>
+					<et2-number  id="#port" min="1" precision="0"></et2-number>
 				</row>
 				<row>
-					<description for="#username" value="Username"/>
-					<textbox id="#username" class="et2_fullWidth"/>
-					<description for="#password" value="Password"/>
-					<passwd id="#password" class="et2_fullWidth"/>
+					<et2-description  for="#username" value="Username"></et2-description>
+					<et2-textbox  id="#username"></et2-textbox>
+					<et2-description  for="#password" value="Password"></et2-description>
+					<et2-password  id="#password"></et2-password>
 				</row>
 				<row>
-					<tabbox id="tabs" span="all" tab_height="230">
+					<et2-tabbox  id="tabs" span="all" tabHeight="230">
 						<tabs>
 							<tab id="guacamole.edit.rdp" label="RDP settings"/>
 							<tab id="guacamole.edit.perms" label="Permissions"/>
 							<tab id="guacamole.edit.wakeonlan" label="Wake-on-LAN (WoL)"/>
 						</tabs>
 						<tabpanels>
-							<template id="guacamole.edit.rdp"/>
-							<template id="guacamole.edit.perms"/>
-							<template id="guacamole.edit.wakeonlan"/>
+							<et2-template  id="guacamole.edit.rdp"></et2-template>
+							<et2-template  id="guacamole.edit.perms"></et2-template>
+							<et2-template  id="guacamole.edit.wakeonlan"></et2-template>
 						</tabpanels>
-					</tabbox>
+					</et2-tabbox>
 				</row>
 				<row class="dialogFooterToolbar">
-					<hbox span="all" width="100%">
-						<button accesskey="s" label="Save" id="button[save]"/>
-						<button label="Apply" id="button[apply]"/>
-						<button label="Cancel" id="button[cancel]" onclick="window.close(); return false;"/>
-						<button label="Delete" id="button[delete]" align="right"
-							onclick="et2_dialog.confirm(widget,'Do you really want to delete this connection?','Delete')"/>
-					</hbox>
+					<et2-hbox  span="all" width="100%">
+						<et2-button  accesskey="s" label="Save" id="button[save]"></et2-button>
+						<et2-button  label="Apply" id="button[apply]"></et2-button>
+						<et2-button  label="Cancel" id="button[cancel]" onclick="window.close(); return false;"></et2-button>
+						<et2-button  label="Delete" id="button[delete]" align="right" onclick="Et2Dialog.confirm(widget,'Do you really want to delete this connection?','Delete')"></et2-button>
+					</et2-hbox>
 				</row>
 			</rows>
 		</grid>
-	</template>
+	</et2-template>
 </overlay>

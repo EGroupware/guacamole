@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2//EN" "http://www.egroupware.org/etemplate2.dtd">
+<!DOCTYPE overlay PUBLIC "-//EGroupware GmbH//eTemplate 2.0//EN" "https://www.egroupware.org/etemplate2.0.dtd">
 <overlay>
-	<template id="guacamole.index" template="" lang="" group="0" version="19.1">
-		<iframe id="guacamole" width="100%" height="100%" src="/guacamole/"/>
-	</template>
+	<et2-template  id="guacamole.index" template="" lang="" group="0" version="19.1">
+		<et2-iframe  id="guacamole" width="100%" height="100%" src="/guacamole/"></et2-iframe>
+	</et2-template>
 </overlay>
